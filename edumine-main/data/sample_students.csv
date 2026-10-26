@@ -1,0 +1,601 @@
+Student_ID,Name,Department,Gender,Study_Hours_Per_Week,Attendance_Percentage,LMS_Engagement_Hours,Assignment_Completion_Rate,Midterm_Score,Past_Failures,Parent_Education,Extracurricular_Activity,Final_Exam_Score,Final_GPA,Academic_Risk
+STU-1001,Dev Reddy,Computer Science,Male,10.1,82.9,10.3,82.1,65.8,0,Associate Degree,Yes,61.2,2.47,Safe
+STU-1002,Vivaan Reddy,Mechanical Eng.,Female,7.3,85.9,4.9,70.6,64.3,0,High School,No,64.8,2.57,Safe
+STU-1003,Aarav Patel,Data Science,Female,12.4,67.5,4.7,45.8,43.4,0,High School,Yes,48.2,1.88,At-Risk
+STU-1004,Priya Kumar,Mechanical Eng.,Male,10.6,59.2,4.5,49.2,54.3,1,Bachelor Degree,No,42.1,1.53,At-Risk
+STU-1005,Aryan Nair,Computer Science,Female,14.8,86.3,6.5,61.3,78.0,0,Bachelor Degree,No,60.9,2.46,Safe
+STU-1006,Kabir Iyer,Data Science,Male,1.6,69.2,6.3,62.7,58.3,0,High School,No,45.6,1.8,At-Risk
+STU-1007,Rahul Reddy,Electronics & Comm.,Male,18.0,96.4,15.3,86.5,96.3,0,Doctorate,No,76.8,3.14,Safe
+STU-1008,Shreya Verma,Information Tech,Female,15.0,83.2,7.6,76.9,84.8,0,High School,No,84.2,3.29,Safe
+STU-1009,Priya Joshi,Mechanical Eng.,Male,14.3,79.2,9.8,58.1,69.0,0,High School,Yes,60.8,2.37,Safe
+STU-1010,Diya Singh,Electronics & Comm.,Female,7.9,56.7,3.5,63.0,53.6,2,High School,No,44.3,1.79,At-Risk
+STU-1011,Rahul Nair,Information Tech,Male,21.2,90.7,14.4,80.2,90.1,0,Doctorate,Yes,78.4,3.14,Safe
+STU-1012,Pooja Kumar,Electronics & Comm.,Female,13.2,78.6,8.6,77.6,69.5,0,Doctorate,Yes,71.8,2.89,Safe
+STU-1013,Aditi Singh,Data Science,Male,13.9,71.0,6.3,66.1,71.9,0,Bachelor Degree,No,57.3,2.28,Safe
+STU-1014,Swati Chatterjee,Data Science,Male,6.8,67.1,4.5,61.2,37.4,2,High School,No,38.3,1.46,At-Risk
+STU-1015,Siddharth Verma,Electronics & Comm.,Male,18.9,89.4,6.9,74.6,66.6,0,High School,No,69.7,2.8,Safe
+STU-1016,Aditya Bhat,Electronics & Comm.,Female,12.2,81.1,8.4,79.2,60.0,0,Master Degree,No,56.8,2.4,Safe
+STU-1017,Varun Bose,Data Science,Male,22.4,88.5,14.6,92.3,95.3,0,Master Degree,Yes,84.2,3.48,Safe
+STU-1018,Aditi Chatterjee,Mechanical Eng.,Male,12.3,66.3,6.1,37.2,35.5,2,Bachelor Degree,Yes,33.3,1.43,At-Risk
+STU-1019,Varun Bhat,Information Tech,Male,6.7,57.6,8.2,57.7,36.9,2,High School,No,35.8,1.37,At-Risk
+STU-1020,Karan Choudhury,Computer Science,Female,19.5,95.9,17.7,93.9,100.0,0,Master Degree,Yes,83.8,3.29,Safe
+STU-1021,Dev Gupta,Information Tech,Female,17.1,79.6,13.1,78.3,95.6,0,Master Degree,No,74.7,3.04,Safe
+STU-1022,Kavya Bose,Mechanical Eng.,Male,11.0,81.3,9.1,73.0,77.7,1,High School,Yes,56.2,2.13,Safe
+STU-1023,Riya Chatterjee,Electronics & Comm.,Male,20.3,89.9,18.8,89.6,92.4,0,Doctorate,Yes,88.9,3.57,Safe
+STU-1024,Sneha Gupta,Information Tech,Female,20.8,92.2,11.4,91.1,91.9,0,Doctorate,No,84.7,3.47,Safe
+STU-1025,Karan Gupta,Mechanical Eng.,Female,17.2,77.4,10.4,76.1,71.2,0,Doctorate,No,69.2,2.81,Safe
+STU-1026,Kavya Kumar,Data Science,Male,28.5,92.9,16.7,82.1,77.5,0,Bachelor Degree,Yes,78.5,3.07,Safe
+STU-1027,Kavya Rao,Information Tech,Female,11.8,47.2,5.9,32.6,44.8,0,Associate Degree,No,42.0,1.8,At-Risk
+STU-1028,Varun Joshi,Data Science,Female,6.3,57.4,4.9,52.5,42.8,1,High School,No,42.8,1.78,At-Risk
+STU-1029,Rohan Choudhury,Computer Science,Female,15.9,92.7,13.4,94.1,82.5,0,Associate Degree,Yes,76.0,3.08,Safe
+STU-1030,Priya Gupta,Electronics & Comm.,Male,17.0,79.0,8.5,76.5,56.5,0,Doctorate,Yes,55.0,2.27,Safe
+STU-1031,Nikhil Kumar,Electronics & Comm.,Male,25.5,98.6,10.7,100.0,82.9,0,Doctorate,No,76.4,3.04,Safe
+STU-1032,Vikram Menon,Information Tech,Female,10.7,40.0,2.5,49.0,36.3,1,High School,No,38.3,1.64,At-Risk
+STU-1033,Rohan Rao,Computer Science,Female,9.6,51.1,6.8,52.1,39.2,0,High School,Yes,42.6,1.69,At-Risk
+STU-1034,Aarav Patel,Computer Science,Female,14.2,81.7,11.5,86.7,59.9,0,High School,Yes,67.6,2.71,Safe
+STU-1035,Nandini Rao,Computer Science,Female,15.0,77.3,8.9,70.1,65.7,0,Master Degree,No,64.6,2.66,Safe
+STU-1036,Aditya Chatterjee,Data Science,Male,29.8,95.3,18.5,84.0,84.1,0,Associate Degree,Yes,85.0,3.45,Safe
+STU-1037,Shreya Deshmukh,Data Science,Female,16.8,87.1,13.3,96.0,98.9,0,Associate Degree,Yes,79.1,3.13,Safe
+STU-1038,Pooja Deshmukh,Information Tech,Male,25.0,97.2,16.1,93.1,85.8,0,Bachelor Degree,No,83.8,3.34,Safe
+STU-1039,Riya Reddy,Computer Science,Male,31.6,96.3,8.8,86.3,96.4,0,Doctorate,No,78.7,3.21,Safe
+STU-1040,Shreya Reddy,Data Science,Female,26.7,92.0,12.4,89.5,83.3,0,Associate Degree,Yes,83.6,3.33,Safe
+STU-1041,Vivaan Deshmukh,Data Science,Male,16.1,89.1,8.2,75.6,76.0,0,Associate Degree,No,71.8,2.76,Safe
+STU-1042,Nandini Patel,Information Tech,Female,18.4,89.3,21.4,76.8,99.0,0,Bachelor Degree,Yes,78.3,3.13,Safe
+STU-1043,Rohan Singh,Data Science,Male,15.1,76.0,11.1,86.3,70.0,0,Master Degree,No,68.4,2.71,Safe
+STU-1044,Aditya Malhotra,Computer Science,Female,25.8,92.9,16.1,89.6,82.6,0,Bachelor Degree,Yes,80.1,3.24,Safe
+STU-1045,Rahul Nair,Information Tech,Male,12.5,92.2,13.1,88.5,70.0,0,Doctorate,No,74.3,2.9,Safe
+STU-1046,Riya Choudhury,Data Science,Female,11.9,87.2,4.1,58.7,74.3,0,Associate Degree,No,56.0,2.28,Safe
+STU-1047,Diya Bhat,Mechanical Eng.,Female,27.0,97.9,18.8,88.2,87.5,0,Doctorate,No,82.0,3.3,Safe
+STU-1048,Diya Verma,Mechanical Eng.,Male,10.2,80.3,13.2,61.2,65.6,0,High School,Yes,59.7,2.41,Safe
+STU-1049,Karan Patel,Data Science,Female,24.0,92.2,14.2,92.7,80.5,0,Bachelor Degree,No,78.1,3.13,Safe
+STU-1050,Riya Singh,Information Tech,Female,7.3,73.5,7.6,42.1,46.7,1,High School,Yes,46.6,1.87,At-Risk
+STU-1051,Aryan Mehta,Computer Science,Female,14.6,87.9,12.6,75.3,61.8,0,Doctorate,No,62.7,2.56,Safe
+STU-1052,Aryan Menon,Electronics & Comm.,Male,29.5,90.3,14.6,78.6,98.1,0,Doctorate,Yes,86.3,3.44,Safe
+STU-1053,Meera Nair,Information Tech,Female,19.3,81.4,14.4,63.0,55.7,0,Master Degree,No,59.8,2.39,Safe
+STU-1054,Arjun Patel,Computer Science,Male,15.4,73.2,11.5,76.9,62.5,0,High School,Yes,65.0,2.58,Safe
+STU-1055,Priya Kumar,Mechanical Eng.,Male,10.5,84.0,7.9,67.7,70.0,0,Bachelor Degree,Yes,56.2,2.25,Safe
+STU-1056,Varun Patel,Data Science,Male,6.0,76.8,10.1,73.1,69.0,0,Associate Degree,No,56.1,2.29,Safe
+STU-1057,Vikram Chatterjee,Electronics & Comm.,Female,5.3,43.3,1.5,68.4,68.1,0,Associate Degree,Yes,47.5,1.97,At-Risk
+STU-1058,Swati Reddy,Data Science,Male,20.0,99.5,20.5,88.2,81.3,0,Bachelor Degree,Yes,72.4,2.91,Safe
+STU-1059,Aditi Chatterjee,Data Science,Male,13.3,80.7,6.3,68.8,64.0,1,Doctorate,No,53.2,2.26,At-Risk
+STU-1060,Aditya Rao,Data Science,Male,27.5,88.5,16.0,100.0,95.1,0,Associate Degree,No,84.0,3.49,Safe
+STU-1061,Kabir Verma,Computer Science,Male,3.8,51.6,6.4,74.9,34.6,0,High School,No,45.2,1.77,At-Risk
+STU-1062,Aarav Rao,Data Science,Male,4.4,58.7,2.8,52.6,40.9,1,Bachelor Degree,No,36.9,1.47,At-Risk
+STU-1063,Priya Deshmukh,Mechanical Eng.,Female,21.7,95.0,18.0,83.1,88.7,0,Bachelor Degree,Yes,82.9,3.18,Safe
+STU-1064,Varun Iyer,Mechanical Eng.,Female,26.2,89.7,12.0,90.7,68.8,0,Master Degree,Yes,72.4,2.87,Safe
+STU-1065,Sneha Iyer,Computer Science,Male,16.2,71.0,9.3,64.3,65.1,0,High School,No,58.7,2.3,Safe
+STU-1066,Varun Chopra,Data Science,Female,16.7,84.2,13.8,54.2,63.8,0,Bachelor Degree,Yes,60.4,2.42,Safe
+STU-1067,Nikhil Chatterjee,Information Tech,Female,6.2,62.6,6.8,55.1,53.7,0,High School,No,44.8,1.77,At-Risk
+STU-1068,Shreya Gupta,Information Tech,Female,22.7,93.2,24.3,94.2,85.7,0,Doctorate,Yes,88.6,3.51,Safe
+STU-1069,Shreya Deshmukh,Data Science,Male,11.6,67.6,12.7,67.3,56.8,1,High School,Yes,50.9,2.1,At-Risk
+STU-1070,Rahul Verma,Information Tech,Female,15.2,88.5,17.1,90.0,92.0,0,Associate Degree,Yes,74.4,2.94,Safe
+STU-1071,Pooja Joshi,Data Science,Female,26.5,99.5,16.7,90.5,84.8,0,Master Degree,Yes,78.8,3.22,Safe
+STU-1072,Rahul Rao,Electronics & Comm.,Female,3.9,77.6,5.3,47.8,59.1,2,Associate Degree,No,37.9,1.44,At-Risk
+STU-1073,Dev Menon,Information Tech,Male,22.3,89.8,19.9,94.8,97.7,0,Bachelor Degree,Yes,89.4,3.45,Safe
+STU-1074,Varun Nair,Data Science,Male,15.0,70.3,14.0,79.2,70.5,0,High School,Yes,65.4,2.83,Safe
+STU-1075,Kavya Deshmukh,Electronics & Comm.,Male,14.4,85.4,10.9,75.8,63.9,0,Doctorate,No,65.8,2.52,Safe
+STU-1076,Karan Reddy,Information Tech,Female,31.5,88.0,15.5,89.3,95.7,0,Bachelor Degree,Yes,77.2,3.21,Safe
+STU-1077,Akash Deshmukh,Computer Science,Female,8.7,58.8,6.2,25.0,47.5,1,Bachelor Degree,No,35.6,1.4,At-Risk
+STU-1078,Rohan Rao,Mechanical Eng.,Male,10.2,53.9,4.2,51.9,35.5,1,High School,Yes,33.9,1.41,At-Risk
+STU-1079,Aditi Joshi,Mechanical Eng.,Male,10.4,84.1,7.1,72.7,71.0,0,Bachelor Degree,No,62.9,2.52,Safe
+STU-1080,Rahul Joshi,Mechanical Eng.,Female,5.9,63.0,4.8,82.8,37.8,0,Bachelor Degree,No,47.0,2.0,At-Risk
+STU-1081,Riya Malhotra,Data Science,Male,6.7,73.6,6.0,75.6,73.6,1,Doctorate,No,54.2,2.06,At-Risk
+STU-1082,Siddharth Sharma,Electronics & Comm.,Male,11.3,78.8,9.3,77.9,64.0,0,Master Degree,Yes,64.5,2.49,Safe
+STU-1083,Shreya Bhat,Mechanical Eng.,Male,6.2,62.8,5.5,39.4,46.1,0,Bachelor Degree,No,39.1,1.62,At-Risk
+STU-1084,Vikram Kumar,Mechanical Eng.,Male,25.8,98.6,12.0,85.1,81.4,0,Master Degree,No,70.9,2.98,Safe
+STU-1085,Riya Patel,Electronics & Comm.,Male,21.9,96.2,13.2,80.5,77.1,0,Master Degree,Yes,77.1,2.98,Safe
+STU-1086,Riya Joshi,Data Science,Female,20.1,70.5,7.9,81.8,70.7,0,High School,Yes,63.9,2.55,Safe
+STU-1087,Diya Singh,Information Tech,Female,21.5,85.0,7.6,70.7,59.4,0,Master Degree,No,63.1,2.54,Safe
+STU-1088,Varun Bhat,Data Science,Male,10.6,93.0,11.7,70.2,75.7,0,Master Degree,No,67.3,2.77,Safe
+STU-1089,Meera Iyer,Computer Science,Female,10.5,84.1,9.0,80.5,74.5,0,Associate Degree,No,55.1,2.25,Safe
+STU-1090,Isha Menon,Information Tech,Female,4.2,51.1,5.7,33.7,41.2,1,High School,Yes,25.3,1.1,At-Risk
+STU-1091,Swati Reddy,Information Tech,Female,21.3,79.2,9.8,75.4,76.5,0,Doctorate,No,61.5,2.66,Safe
+STU-1092,Priya Mehta,Electronics & Comm.,Male,13.7,78.9,10.2,75.4,68.0,0,Doctorate,No,60.2,2.55,Safe
+STU-1093,Vikram Gupta,Information Tech,Male,7.2,68.8,2.3,63.2,30.6,0,High School,No,47.2,1.88,At-Risk
+STU-1094,Siddharth Nair,Mechanical Eng.,Male,7.6,73.6,4.7,61.8,56.8,1,High School,Yes,50.6,2.06,At-Risk
+STU-1095,Kabir Bose,Computer Science,Male,2.2,63.5,6.1,53.6,54.9,3,Associate Degree,No,30.6,1.22,At-Risk
+STU-1096,Arjun Rao,Mechanical Eng.,Female,26.7,90.1,19.5,80.6,91.5,0,Master Degree,Yes,76.4,3.16,Safe
+STU-1097,Meera Malhotra,Data Science,Female,23.3,90.2,21.8,90.2,95.2,0,Associate Degree,Yes,77.3,3.11,Safe
+STU-1098,Sneha Rao,Mechanical Eng.,Male,8.2,70.4,4.6,66.7,42.5,1,High School,No,53.7,2.12,At-Risk
+STU-1099,Aditya Deshmukh,Information Tech,Female,17.3,85.0,12.5,93.8,85.9,0,Associate Degree,No,72.6,2.82,Safe
+STU-1100,Neha Sharma,Electronics & Comm.,Male,3.4,63.7,5.0,70.6,39.0,0,Bachelor Degree,No,44.0,1.69,At-Risk
+STU-1101,Priya Chatterjee,Mechanical Eng.,Female,23.8,94.7,11.5,91.3,89.2,0,Master Degree,Yes,82.9,3.34,Safe
+STU-1102,Kabir Deshmukh,Information Tech,Female,12.1,59.3,3.3,58.7,43.1,1,Associate Degree,No,46.8,1.83,At-Risk
+STU-1103,Riya Malhotra,Data Science,Male,15.2,78.7,7.4,68.4,92.2,0,Doctorate,Yes,72.5,2.85,Safe
+STU-1104,Priya Sharma,Information Tech,Female,22.4,94.2,20.3,83.9,88.7,0,Associate Degree,Yes,72.6,2.8,Safe
+STU-1105,Vivaan Bose,Data Science,Female,13.9,91.8,7.9,75.8,70.9,0,Master Degree,No,71.4,2.95,Safe
+STU-1106,Arjun Kumar,Information Tech,Male,15.2,85.1,15.0,78.7,67.8,0,Master Degree,No,71.1,2.88,Safe
+STU-1107,Kabir Deshmukh,Electronics & Comm.,Female,27.3,94.0,20.3,96.0,97.7,0,Bachelor Degree,Yes,91.0,3.63,Safe
+STU-1108,Aditi Chatterjee,Computer Science,Male,14.5,76.9,11.0,77.3,74.6,0,High School,Yes,66.5,2.66,Safe
+STU-1109,Nikhil Verma,Computer Science,Female,16.6,72.9,14.0,75.7,73.4,0,High School,Yes,63.9,2.55,Safe
+STU-1110,Kavya Iyer,Data Science,Female,15.0,82.1,10.7,72.5,67.4,0,High School,No,64.0,2.5,Safe
+STU-1111,Aryan Kumar,Information Tech,Male,12.3,81.8,10.6,69.8,69.8,0,Associate Degree,No,53.2,2.08,At-Risk
+STU-1112,Kavya Mehta,Computer Science,Female,20.6,73.6,9.0,79.2,79.9,0,High School,No,69.8,2.75,Safe
+STU-1113,Aryan Sharma,Electronics & Comm.,Male,13.2,74.1,9.2,79.1,60.0,0,Associate Degree,No,67.6,2.7,Safe
+STU-1114,Rohan Bhat,Data Science,Female,25.0,89.2,13.3,89.4,86.4,0,Doctorate,No,83.5,3.31,Safe
+STU-1115,Nandini Mehta,Computer Science,Female,15.2,83.7,11.2,77.6,76.8,0,Doctorate,No,74.0,3.06,Safe
+STU-1116,Sneha Chopra,Computer Science,Male,15.7,76.9,14.9,73.7,58.1,0,Master Degree,Yes,54.1,2.21,At-Risk
+STU-1117,Siddharth Choudhury,Computer Science,Male,22.2,84.4,14.2,74.5,76.9,0,Associate Degree,Yes,74.3,3.03,Safe
+STU-1118,Akash Iyer,Information Tech,Female,25.7,91.9,13.7,87.4,85.2,0,Doctorate,No,90.1,3.6,Safe
+STU-1119,Kavya Chatterjee,Information Tech,Male,23.1,92.1,16.8,76.7,86.3,0,Doctorate,Yes,73.8,2.87,Safe
+STU-1120,Arjun Singh,Computer Science,Male,13.0,86.9,11.4,70.1,67.0,0,Associate Degree,No,69.4,2.85,Safe
+STU-1121,Nikhil Bose,Mechanical Eng.,Male,10.5,67.2,5.3,60.2,43.6,2,High School,No,42.9,1.82,At-Risk
+STU-1122,Neha Rao,Data Science,Male,14.7,83.4,16.0,71.0,72.8,0,Bachelor Degree,Yes,63.3,2.49,Safe
+STU-1123,Shreya Nair,Electronics & Comm.,Male,19.9,89.9,18.5,95.8,100.0,0,Doctorate,No,84.1,3.29,Safe
+STU-1124,Priya Sharma,Mechanical Eng.,Female,27.0,92.2,16.5,92.7,80.8,0,Master Degree,Yes,79.4,3.04,Safe
+STU-1125,Aditi Deshmukh,Information Tech,Female,27.7,95.5,8.5,83.6,77.1,0,Associate Degree,No,84.9,3.39,Safe
+STU-1126,Dev Choudhury,Information Tech,Female,31.1,91.3,19.5,92.9,77.0,0,Doctorate,Yes,88.4,3.65,Safe
+STU-1127,Meera Malhotra,Data Science,Male,25.6,89.3,17.3,87.3,76.4,0,Doctorate,No,76.8,3.06,Safe
+STU-1128,Neha Chatterjee,Mechanical Eng.,Male,17.7,87.9,4.3,71.1,60.9,1,Doctorate,No,60.6,2.32,Safe
+STU-1129,Arjun Chopra,Information Tech,Male,12.4,83.1,9.4,77.8,71.7,0,Bachelor Degree,No,59.1,2.34,Safe
+STU-1130,Meera Reddy,Data Science,Male,9.1,77.5,6.2,47.8,46.2,0,High School,No,50.3,2.11,At-Risk
+STU-1131,Aditya Kumar,Information Tech,Male,15.3,83.6,12.6,75.9,68.7,0,High School,No,64.7,2.59,Safe
+STU-1132,Siddharth Kumar,Electronics & Comm.,Female,21.2,94.9,15.7,89.5,74.0,0,Master Degree,Yes,80.0,3.23,Safe
+STU-1133,Tanvi Sharma,Mechanical Eng.,Female,6.6,98.6,6.9,77.2,62.6,0,High School,No,65.1,2.55,Safe
+STU-1134,Diya Chatterjee,Electronics & Comm.,Female,31.7,94.2,12.3,88.8,100.0,0,Associate Degree,No,90.7,3.65,Safe
+STU-1135,Ananya Sharma,Mechanical Eng.,Male,17.9,88.1,11.4,64.9,85.7,0,Master Degree,No,64.3,2.65,Safe
+STU-1136,Vikram Rao,Data Science,Female,23.0,98.5,17.8,87.5,94.7,0,Associate Degree,Yes,88.9,3.46,Safe
+STU-1137,Ananya Patel,Information Tech,Male,26.9,94.5,21.2,87.4,88.8,0,Bachelor Degree,Yes,78.8,3.05,Safe
+STU-1138,Vivaan Iyer,Mechanical Eng.,Male,8.2,75.1,3.0,68.9,59.1,0,Associate Degree,Yes,54.7,2.13,At-Risk
+STU-1139,Ananya Chatterjee,Information Tech,Female,11.6,94.5,12.4,71.4,48.5,0,Master Degree,No,69.4,2.68,Safe
+STU-1140,Swati Bose,Electronics & Comm.,Male,8.6,87.1,16.8,85.1,76.1,0,Doctorate,No,68.3,2.76,Safe
+STU-1141,Kavya Verma,Mechanical Eng.,Female,21.0,90.9,9.2,88.4,81.1,0,Master Degree,Yes,70.1,2.82,Safe
+STU-1142,Kabir Patel,Data Science,Female,18.9,90.1,11.8,69.2,56.7,0,Doctorate,Yes,65.2,2.53,Safe
+STU-1143,Rohan Gupta,Computer Science,Male,10.6,66.0,4.8,40.8,65.4,1,Bachelor Degree,No,43.5,1.75,At-Risk
+STU-1144,Tanvi Verma,Data Science,Male,22.3,96.8,17.5,87.3,90.8,0,Doctorate,No,83.9,3.25,Safe
+STU-1145,Akash Bose,Computer Science,Female,9.6,76.8,7.3,81.2,68.3,0,Doctorate,No,67.4,2.72,Safe
+STU-1146,Riya Kumar,Information Tech,Female,11.3,73.9,10.4,79.1,74.7,0,Associate Degree,Yes,69.6,2.91,Safe
+STU-1147,Swati Nair,Data Science,Female,12.0,72.8,9.2,94.6,63.8,0,Associate Degree,Yes,71.8,2.95,Safe
+STU-1148,Shreya Joshi,Mechanical Eng.,Male,28.4,94.3,22.5,86.7,86.6,0,Bachelor Degree,Yes,80.8,3.15,Safe
+STU-1149,Vikram Joshi,Information Tech,Male,4.5,62.2,3.0,52.4,43.2,1,Bachelor Degree,Yes,39.7,1.61,At-Risk
+STU-1150,Vikram Patel,Mechanical Eng.,Female,16.9,74.0,5.8,79.6,88.5,0,Bachelor Degree,No,66.0,2.64,Safe
+STU-1151,Kavya Nair,Computer Science,Female,10.5,84.8,6.8,74.7,85.3,0,Doctorate,Yes,65.7,2.72,Safe
+STU-1152,Aryan Sharma,Electronics & Comm.,Female,26.4,89.9,10.4,89.4,93.5,0,Associate Degree,Yes,81.5,3.36,Safe
+STU-1153,Karan Bose,Electronics & Comm.,Female,14.7,79.1,9.9,72.8,77.4,0,Master Degree,No,69.8,2.71,Safe
+STU-1154,Rohan Choudhury,Electronics & Comm.,Male,10.9,70.0,11.0,65.2,51.6,0,Bachelor Degree,No,56.7,2.27,At-Risk
+STU-1155,Riya Reddy,Data Science,Male,14.3,80.4,12.3,71.7,73.4,0,Master Degree,No,66.3,2.61,Safe
+STU-1156,Tanvi Malhotra,Mechanical Eng.,Female,13.2,84.2,6.8,74.2,70.9,0,High School,No,62.5,2.52,Safe
+STU-1157,Arjun Nair,Electronics & Comm.,Female,23.9,95.3,21.6,92.3,88.1,0,Bachelor Degree,Yes,77.7,3.02,Safe
+STU-1158,Riya Chatterjee,Information Tech,Male,12.9,84.0,9.7,59.6,65.2,0,Associate Degree,Yes,54.6,2.17,At-Risk
+STU-1159,Karan Chopra,Mechanical Eng.,Male,15.9,73.3,6.6,77.3,64.8,1,High School,No,56.5,2.27,Safe
+STU-1160,Aditya Nair,Mechanical Eng.,Female,22.7,89.7,14.4,86.8,83.1,0,Associate Degree,Yes,78.5,3.09,Safe
+STU-1161,Varun Choudhury,Computer Science,Female,6.4,64.0,5.4,66.3,60.4,1,High School,Yes,40.2,1.52,At-Risk
+STU-1162,Akash Gupta,Electronics & Comm.,Female,23.2,86.5,15.1,82.0,75.4,0,Associate Degree,No,75.8,3.09,Safe
+STU-1163,Rohan Singh,Computer Science,Male,23.9,91.3,14.4,88.9,94.0,0,Master Degree,Yes,78.1,3.13,Safe
+STU-1164,Neha Joshi,Mechanical Eng.,Male,3.2,63.9,5.7,53.4,39.3,1,Bachelor Degree,No,30.8,1.23,At-Risk
+STU-1165,Neha Singh,Information Tech,Female,13.4,91.3,5.4,61.1,84.2,1,Associate Degree,No,59.9,2.49,Safe
+STU-1166,Swati Mehta,Mechanical Eng.,Female,10.1,85.1,8.0,91.3,65.5,0,Bachelor Degree,Yes,66.8,2.74,Safe
+STU-1167,Nikhil Deshmukh,Electronics & Comm.,Male,14.1,76.5,10.9,68.6,89.1,0,Bachelor Degree,Yes,68.1,2.74,Safe
+STU-1168,Aditi Joshi,Mechanical Eng.,Male,4.9,51.9,2.6,66.4,42.8,1,Bachelor Degree,No,35.9,1.4,At-Risk
+STU-1169,Priya Choudhury,Electronics & Comm.,Male,9.0,70.5,6.5,42.9,34.4,0,Bachelor Degree,Yes,47.1,1.91,At-Risk
+STU-1170,Vikram Rao,Data Science,Female,20.3,93.8,24.7,85.1,94.5,0,Associate Degree,No,83.2,3.35,Safe
+STU-1171,Meera Deshmukh,Computer Science,Male,16.6,84.6,6.9,76.9,76.0,0,Master Degree,No,66.2,2.56,Safe
+STU-1172,Rahul Iyer,Information Tech,Female,7.1,84.5,9.9,70.1,68.0,0,Doctorate,Yes,61.6,2.53,Safe
+STU-1173,Aryan Rao,Computer Science,Male,15.1,82.6,12.0,67.5,81.9,0,Doctorate,Yes,66.4,2.71,Safe
+STU-1174,Swati Bose,Computer Science,Female,8.9,66.9,4.6,50.9,49.1,2,High School,No,34.1,1.41,At-Risk
+STU-1175,Rohan Choudhury,Electronics & Comm.,Male,15.7,85.3,16.4,82.6,53.9,0,High School,No,64.7,2.65,Safe
+STU-1176,Nandini Rao,Mechanical Eng.,Male,15.3,77.3,10.9,72.0,70.8,0,Master Degree,No,62.5,2.43,Safe
+STU-1177,Nandini Chatterjee,Computer Science,Female,25.0,86.4,18.9,97.7,84.4,0,Doctorate,Yes,76.7,3.09,Safe
+STU-1178,Meera Patel,Information Tech,Female,9.6,56.9,5.8,50.5,54.6,1,High School,Yes,39.1,1.5,At-Risk
+STU-1179,Vikram Gupta,Electronics & Comm.,Female,30.9,90.4,16.9,94.6,78.1,0,Doctorate,Yes,73.6,2.82,Safe
+STU-1180,Shreya Verma,Electronics & Comm.,Male,29.1,92.7,12.7,100.0,85.9,0,Associate Degree,Yes,84.3,3.32,Safe
+STU-1181,Vivaan Singh,Mechanical Eng.,Male,21.2,88.3,12.6,78.7,78.0,0,Associate Degree,Yes,69.7,2.88,Safe
+STU-1182,Isha Patel,Mechanical Eng.,Male,21.4,92.4,21.9,82.1,86.6,0,Master Degree,No,75.9,2.89,Safe
+STU-1183,Neha Bhat,Data Science,Female,7.2,51.7,4.9,58.9,70.5,2,Associate Degree,No,36.4,1.44,At-Risk
+STU-1184,Vikram Nair,Computer Science,Male,20.2,96.8,8.3,81.5,90.4,0,Master Degree,Yes,70.4,2.72,Safe
+STU-1185,Rohan Bose,Electronics & Comm.,Male,6.4,48.1,5.1,50.2,44.9,2,Bachelor Degree,Yes,23.3,1.0,At-Risk
+STU-1186,Akash Nair,Information Tech,Male,25.6,87.3,4.5,88.8,100.0,0,Associate Degree,Yes,88.0,3.48,Safe
+STU-1187,Nandini Choudhury,Computer Science,Female,25.4,87.6,17.6,85.6,90.5,0,Doctorate,Yes,81.1,3.17,Safe
+STU-1188,Aryan Joshi,Electronics & Comm.,Female,3.8,62.0,5.2,63.0,41.2,1,Bachelor Degree,Yes,36.5,1.46,At-Risk
+STU-1189,Kabir Sharma,Mechanical Eng.,Female,1.0,72.0,6.0,48.6,50.7,3,Bachelor Degree,Yes,32.6,1.3,At-Risk
+STU-1190,Siddharth Joshi,Data Science,Male,11.9,85.8,5.7,76.3,58.8,0,Associate Degree,Yes,60.3,2.44,Safe
+STU-1191,Kavya Nair,Data Science,Female,11.4,76.1,10.1,83.2,61.9,1,Bachelor Degree,Yes,57.5,2.28,Safe
+STU-1192,Shreya Bose,Computer Science,Male,24.6,88.7,16.3,82.6,67.6,0,Master Degree,No,74.4,3.05,Safe
+STU-1193,Rohan Joshi,Electronics & Comm.,Male,20.2,74.8,7.4,74.6,83.6,0,Associate Degree,Yes,68.6,2.69,Safe
+STU-1194,Vivaan Chatterjee,Electronics & Comm.,Male,4.0,74.5,3.0,34.6,51.0,2,Associate Degree,No,30.9,1.11,At-Risk
+STU-1195,Swati Choudhury,Electronics & Comm.,Male,23.8,89.1,16.3,94.3,81.2,0,Associate Degree,Yes,79.2,3.25,Safe
+STU-1196,Rohan Iyer,Data Science,Male,15.8,81.7,5.2,81.4,65.0,0,High School,No,68.9,2.8,Safe
+STU-1197,Shreya Malhotra,Computer Science,Male,14.2,86.1,11.0,67.2,65.2,1,Master Degree,Yes,62.1,2.46,Safe
+STU-1198,Pooja Nair,Mechanical Eng.,Male,25.9,90.7,14.4,83.3,91.0,0,Doctorate,No,89.3,3.49,Safe
+STU-1199,Ananya Singh,Information Tech,Female,6.5,66.2,5.5,52.1,52.9,1,Associate Degree,Yes,41.4,1.57,At-Risk
+STU-1200,Swati Mehta,Data Science,Female,25.7,87.2,15.0,89.2,86.1,0,Associate Degree,No,87.5,3.52,Safe
+STU-1201,Swati Joshi,Information Tech,Female,24.8,90.6,17.4,87.2,89.2,0,Bachelor Degree,Yes,86.8,3.39,Safe
+STU-1202,Diya Joshi,Information Tech,Female,18.0,80.0,13.4,73.3,50.8,0,Associate Degree,Yes,55.6,2.18,Safe
+STU-1203,Varun Chatterjee,Data Science,Male,21.7,90.4,13.3,76.8,93.3,0,Doctorate,Yes,82.8,3.19,Safe
+STU-1204,Riya Chatterjee,Information Tech,Female,29.0,93.6,15.9,83.6,90.3,0,Bachelor Degree,Yes,76.7,3.16,Safe
+STU-1205,Siddharth Choudhury,Mechanical Eng.,Male,12.6,84.1,8.0,80.2,83.4,0,High School,No,73.4,2.86,Safe
+STU-1206,Akash Chopra,Data Science,Male,4.3,73.3,1.9,60.7,57.3,1,High School,No,46.5,1.84,At-Risk
+STU-1207,Nandini Chopra,Computer Science,Male,10.6,81.9,4.4,55.8,72.3,0,High School,No,62.2,2.45,Safe
+STU-1208,Rahul Nair,Data Science,Female,23.6,91.1,17.7,86.4,93.3,0,Bachelor Degree,Yes,82.5,3.33,Safe
+STU-1209,Riya Kumar,Mechanical Eng.,Female,20.3,96.3,13.9,93.8,90.6,0,Doctorate,Yes,89.7,3.57,Safe
+STU-1210,Meera Iyer,Mechanical Eng.,Female,5.1,47.0,3.9,32.7,58.6,0,High School,No,42.4,1.83,At-Risk
+STU-1211,Aryan Kumar,Data Science,Male,26.9,89.4,16.3,86.2,82.9,0,Bachelor Degree,Yes,79.1,3.19,Safe
+STU-1212,Kabir Iyer,Data Science,Male,8.9,72.8,5.5,54.3,61.0,1,High School,No,38.7,1.49,At-Risk
+STU-1213,Riya Sharma,Data Science,Female,15.8,89.2,9.1,81.6,85.5,0,Associate Degree,No,78.3,3.05,Safe
+STU-1214,Aryan Rao,Computer Science,Female,16.7,79.5,7.0,91.4,69.4,1,High School,No,69.9,2.84,Safe
+STU-1215,Vivaan Deshmukh,Mechanical Eng.,Female,11.8,82.2,7.3,63.4,65.5,0,Master Degree,Yes,58.2,2.31,Safe
+STU-1216,Vikram Chopra,Mechanical Eng.,Female,1.0,50.5,6.0,53.0,34.0,0,High School,No,40.5,1.57,At-Risk
+STU-1217,Kavya Verma,Mechanical Eng.,Male,7.4,81.7,9.0,79.4,72.9,0,High School,No,60.0,2.41,Safe
+STU-1218,Diya Choudhury,Information Tech,Male,15.4,99.5,15.8,84.7,77.4,0,Bachelor Degree,No,66.4,2.53,Safe
+STU-1219,Neha Bose,Computer Science,Female,27.1,98.1,19.7,85.7,89.0,0,Master Degree,Yes,80.7,3.17,Safe
+STU-1220,Rohan Iyer,Electronics & Comm.,Male,15.2,68.1,7.3,72.3,62.1,0,Doctorate,No,60.4,2.4,Safe
+STU-1221,Karan Joshi,Information Tech,Male,10.2,89.5,9.2,74.2,77.4,0,High School,Yes,67.1,2.71,Safe
+STU-1222,Nandini Chatterjee,Data Science,Male,7.6,53.7,4.7,51.6,47.7,0,High School,No,54.2,2.13,At-Risk
+STU-1223,Sneha Rao,Information Tech,Male,6.4,54.8,7.0,41.6,60.7,1,High School,No,41.4,1.8,At-Risk
+STU-1224,Arjun Deshmukh,Electronics & Comm.,Male,11.4,87.0,7.5,85.1,68.7,0,Associate Degree,No,57.5,2.24,Safe
+STU-1225,Riya Choudhury,Computer Science,Female,18.6,71.0,12.6,83.0,61.2,0,High School,Yes,62.0,2.4,Safe
+STU-1226,Sneha Reddy,Electronics & Comm.,Female,4.9,75.8,7.3,45.3,47.7,1,High School,Yes,45.2,1.71,At-Risk
+STU-1227,Aryan Chatterjee,Mechanical Eng.,Male,9.7,77.4,9.4,76.2,63.7,0,Master Degree,Yes,61.8,2.47,Safe
+STU-1228,Pooja Deshmukh,Computer Science,Male,22.1,90.3,15.6,88.5,85.4,0,Doctorate,No,77.3,3.22,Safe
+STU-1229,Pooja Reddy,Mechanical Eng.,Female,13.7,82.4,10.2,81.2,57.1,0,Master Degree,Yes,55.2,2.11,Safe
+STU-1230,Meera Reddy,Electronics & Comm.,Male,14.5,90.4,10.3,72.2,82.0,0,Bachelor Degree,Yes,65.5,2.57,Safe
+STU-1231,Aryan Singh,Information Tech,Female,2.8,56.2,4.6,57.9,60.6,0,Associate Degree,Yes,38.0,1.69,At-Risk
+STU-1232,Aarav Gupta,Electronics & Comm.,Male,10.8,82.8,12.2,89.7,81.1,0,Bachelor Degree,No,68.7,2.74,Safe
+STU-1233,Aarav Gupta,Data Science,Male,8.7,82.4,10.3,88.2,67.7,0,Associate Degree,Yes,66.2,2.7,Safe
+STU-1234,Aditi Sharma,Computer Science,Female,22.5,91.5,11.3,88.9,90.7,0,Associate Degree,Yes,80.5,3.3,Safe
+STU-1235,Vikram Rao,Data Science,Male,10.8,77.1,7.7,85.0,51.8,0,Bachelor Degree,No,72.5,3.0,Safe
+STU-1236,Nikhil Bhat,Mechanical Eng.,Female,22.7,94.2,16.4,87.8,86.9,0,Master Degree,Yes,79.1,3.25,Safe
+STU-1237,Isha Mehta,Computer Science,Female,23.5,96.0,25.3,90.2,100.0,0,Associate Degree,Yes,86.6,3.54,Safe
+STU-1238,Riya Deshmukh,Information Tech,Male,8.8,55.3,1.7,44.5,59.5,0,Associate Degree,No,41.4,1.72,At-Risk
+STU-1239,Aditya Menon,Computer Science,Male,7.8,68.6,3.2,57.2,58.8,1,High School,No,48.4,1.98,At-Risk
+STU-1240,Tanvi Bhat,Information Tech,Male,15.6,80.8,6.9,72.7,64.3,0,Associate Degree,Yes,60.5,2.38,Safe
+STU-1241,Rahul Mehta,Computer Science,Female,1.3,65.9,4.5,42.2,57.3,0,Associate Degree,No,46.9,1.86,At-Risk
+STU-1242,Aditya Iyer,Electronics & Comm.,Male,11.5,76.4,6.7,80.6,69.3,0,High School,No,55.5,2.21,Safe
+STU-1243,Aarav Choudhury,Information Tech,Female,14.2,82.7,13.6,63.5,43.8,0,Master Degree,Yes,55.5,2.17,Safe
+STU-1244,Priya Singh,Mechanical Eng.,Male,14.7,85.8,6.6,77.8,75.5,0,Master Degree,Yes,61.4,2.46,Safe
+STU-1245,Nandini Verma,Information Tech,Female,23.9,84.9,13.2,86.5,84.3,0,Bachelor Degree,Yes,77.2,3.02,Safe
+STU-1246,Nandini Rao,Mechanical Eng.,Male,8.8,58.4,4.5,63.5,38.6,0,Bachelor Degree,Yes,47.4,1.83,At-Risk
+STU-1247,Akash Deshmukh,Electronics & Comm.,Female,13.0,76.3,11.7,70.1,80.2,1,High School,No,57.5,2.37,Safe
+STU-1248,Arjun Gupta,Mechanical Eng.,Male,13.5,80.6,15.4,86.6,59.0,0,High School,No,69.2,2.87,Safe
+STU-1249,Sneha Reddy,Data Science,Male,19.8,96.2,16.8,87.3,84.9,0,Associate Degree,No,79.3,3.2,Safe
+STU-1250,Karan Patel,Information Tech,Male,13.6,72.3,2.6,69.6,60.0,0,Associate Degree,No,61.2,2.42,Safe
+STU-1251,Arjun Gupta,Computer Science,Female,26.5,87.4,20.2,88.5,92.7,0,Master Degree,No,78.2,3.0,Safe
+STU-1252,Varun Chopra,Electronics & Comm.,Female,8.0,75.5,6.1,64.9,34.9,1,High School,No,38.0,1.57,At-Risk
+STU-1253,Vivaan Nair,Data Science,Female,20.5,86.3,9.0,89.7,77.3,0,Master Degree,No,68.0,2.7,Safe
+STU-1254,Nikhil Patel,Data Science,Male,4.8,95.5,11.9,73.8,68.6,1,Doctorate,No,67.8,2.73,Safe
+STU-1255,Nikhil Bhat,Information Tech,Male,16.5,85.3,10.8,74.2,77.1,0,Associate Degree,No,70.6,2.9,Safe
+STU-1256,Vikram Patel,Information Tech,Male,11.4,73.6,5.1,75.3,71.5,0,Bachelor Degree,No,63.7,2.6,Safe
+STU-1257,Aryan Verma,Electronics & Comm.,Female,8.4,76.0,9.2,60.9,69.4,0,Master Degree,No,64.4,2.62,Safe
+STU-1258,Vikram Verma,Computer Science,Male,6.1,52.7,3.3,47.5,46.5,1,High School,No,36.8,1.59,At-Risk
+STU-1259,Dev Patel,Mechanical Eng.,Male,7.2,74.3,7.7,39.8,41.1,3,High School,No,22.8,1.0,At-Risk
+STU-1260,Vikram Bhat,Data Science,Male,16.7,90.7,16.6,84.0,100.0,0,Associate Degree,No,72.8,2.93,Safe
+STU-1261,Karan Iyer,Computer Science,Male,12.1,82.3,12.0,69.1,90.7,0,Bachelor Degree,Yes,60.3,2.3,Safe
+STU-1262,Akash Patel,Mechanical Eng.,Female,5.3,68.0,5.2,52.6,53.7,0,High School,No,55.4,2.11,At-Risk
+STU-1263,Akash Bose,Information Tech,Female,6.4,64.4,5.6,45.0,50.3,3,Associate Degree,No,32.3,1.24,At-Risk
+STU-1264,Swati Joshi,Information Tech,Male,15.7,75.2,12.0,85.1,81.6,0,Doctorate,No,76.7,3.1,Safe
+STU-1265,Diya Rao,Computer Science,Male,16.2,79.8,11.4,63.8,64.7,0,Doctorate,Yes,55.7,2.19,Safe
+STU-1266,Riya Malhotra,Electronics & Comm.,Male,14.9,80.9,8.0,67.6,74.1,0,Bachelor Degree,Yes,66.5,2.65,Safe
+STU-1267,Rohan Bhat,Data Science,Male,18.6,85.6,17.0,89.9,88.7,0,Associate Degree,Yes,80.6,3.32,Safe
+STU-1268,Vivaan Mehta,Computer Science,Male,11.9,69.2,12.2,64.3,77.6,0,Bachelor Degree,No,54.2,2.17,At-Risk
+STU-1269,Siddharth Iyer,Mechanical Eng.,Female,5.0,70.2,4.7,59.0,71.7,1,Bachelor Degree,Yes,42.0,1.62,At-Risk
+STU-1270,Karan Chopra,Computer Science,Male,17.4,79.9,12.3,73.0,84.6,0,Associate Degree,No,71.4,2.75,Safe
+STU-1271,Aditya Rao,Information Tech,Female,8.2,60.2,1.0,54.4,54.8,1,High School,No,42.8,1.79,At-Risk
+STU-1272,Vivaan Patel,Electronics & Comm.,Female,16.6,70.3,10.5,70.0,70.3,0,Bachelor Degree,Yes,64.9,2.39,Safe
+STU-1273,Varun Mehta,Data Science,Male,3.3,54.2,5.9,38.2,57.3,1,High School,No,38.1,1.44,At-Risk
+STU-1274,Isha Mehta,Data Science,Male,19.2,90.1,17.8,93.7,86.2,0,Associate Degree,Yes,76.8,3.19,Safe
+STU-1275,Pooja Singh,Information Tech,Male,11.9,82.4,14.9,77.1,75.3,0,Associate Degree,No,64.4,2.63,Safe
+STU-1276,Priya Singh,Electronics & Comm.,Male,8.7,86.8,11.9,74.3,62.4,0,Bachelor Degree,Yes,64.0,2.55,Safe
+STU-1277,Riya Bhat,Information Tech,Male,28.3,96.0,19.3,88.6,95.6,0,Associate Degree,Yes,90.2,3.57,Safe
+STU-1278,Karan Menon,Information Tech,Female,26.7,89.8,11.6,91.6,93.5,0,Master Degree,Yes,84.2,3.5,Safe
+STU-1279,Nandini Nair,Computer Science,Male,14.4,91.7,17.8,85.8,83.0,0,Bachelor Degree,Yes,81.6,3.26,Safe
+STU-1280,Akash Menon,Computer Science,Male,7.1,72.0,5.7,58.0,50.5,0,High School,No,56.5,2.26,At-Risk
+STU-1281,Kabir Bose,Mechanical Eng.,Female,26.0,89.9,7.4,95.6,84.6,0,Bachelor Degree,Yes,75.2,3.06,Safe
+STU-1282,Swati Singh,Information Tech,Male,12.6,77.1,11.8,82.9,88.4,0,Master Degree,Yes,69.0,2.77,Safe
+STU-1283,Diya Malhotra,Mechanical Eng.,Male,10.5,74.4,13.2,61.9,82.0,0,Master Degree,Yes,58.7,2.31,Safe
+STU-1284,Rohan Chopra,Data Science,Female,8.0,78.4,9.0,78.3,69.6,0,High School,No,66.7,2.78,Safe
+STU-1285,Siddharth Rao,Data Science,Female,9.8,59.5,3.9,45.7,44.4,3,Associate Degree,No,20.4,1.0,At-Risk
+STU-1286,Swati Choudhury,Data Science,Male,4.1,77.6,3.3,44.3,68.7,1,High School,No,38.4,1.48,At-Risk
+STU-1287,Varun Patel,Computer Science,Male,1.6,62.8,6.4,36.6,51.0,0,High School,No,41.2,1.6,At-Risk
+STU-1288,Priya Mehta,Mechanical Eng.,Male,13.0,90.0,13.2,83.5,80.1,0,Bachelor Degree,Yes,66.4,2.58,Safe
+STU-1289,Meera Joshi,Computer Science,Female,13.2,82.7,14.5,79.8,63.2,0,Master Degree,Yes,72.1,2.76,Safe
+STU-1290,Dev Mehta,Information Tech,Female,15.8,80.3,11.0,70.9,74.8,0,Master Degree,Yes,65.1,2.59,Safe
+STU-1291,Kavya Chatterjee,Computer Science,Female,6.8,65.7,1.3,46.7,68.5,0,High School,Yes,46.1,1.98,At-Risk
+STU-1292,Tanvi Deshmukh,Computer Science,Male,18.8,85.8,6.6,76.9,76.1,0,Doctorate,Yes,64.6,2.53,Safe
+STU-1293,Sneha Gupta,Computer Science,Male,20.0,79.2,14.3,82.0,74.7,0,Doctorate,Yes,72.3,2.9,Safe
+STU-1294,Priya Menon,Mechanical Eng.,Female,7.9,76.8,5.9,53.9,68.8,0,Bachelor Degree,No,57.2,2.27,Safe
+STU-1295,Diya Malhotra,Electronics & Comm.,Male,8.0,82.7,11.9,71.8,81.0,0,Bachelor Degree,Yes,68.0,2.61,Safe
+STU-1296,Shreya Patel,Electronics & Comm.,Female,26.8,85.5,7.9,92.2,89.3,0,Bachelor Degree,No,77.0,2.94,Safe
+STU-1297,Nikhil Bhat,Electronics & Comm.,Female,6.1,46.7,4.5,43.7,44.6,1,Associate Degree,No,39.2,1.51,At-Risk
+STU-1298,Priya Rao,Data Science,Male,4.8,71.1,5.2,58.8,60.7,0,Bachelor Degree,Yes,45.9,1.75,At-Risk
+STU-1299,Dev Gupta,Data Science,Female,13.4,75.2,1.8,36.1,55.3,1,Bachelor Degree,Yes,44.1,1.67,At-Risk
+STU-1300,Diya Joshi,Data Science,Female,9.2,79.6,6.9,75.4,97.9,0,High School,Yes,71.4,2.92,Safe
+STU-1301,Arjun Joshi,Mechanical Eng.,Male,25.7,94.4,24.2,82.2,91.3,0,Associate Degree,No,79.1,3.21,Safe
+STU-1302,Kabir Verma,Data Science,Male,3.7,65.0,8.0,48.6,54.7,1,High School,No,39.7,1.56,At-Risk
+STU-1303,Nandini Rao,Electronics & Comm.,Female,9.0,84.6,9.1,69.3,64.4,1,Master Degree,No,51.8,2.15,At-Risk
+STU-1304,Varun Malhotra,Information Tech,Male,21.3,89.1,2.5,82.7,80.5,0,Associate Degree,No,59.5,2.38,Safe
+STU-1305,Neha Choudhury,Electronics & Comm.,Male,26.2,99.5,17.0,83.5,85.6,0,Associate Degree,Yes,77.5,3.13,Safe
+STU-1306,Rohan Deshmukh,Mechanical Eng.,Female,4.0,71.7,4.0,52.5,34.1,1,Associate Degree,Yes,35.6,1.36,At-Risk
+STU-1307,Arjun Reddy,Computer Science,Male,19.1,87.0,10.3,88.1,74.3,0,Bachelor Degree,No,73.5,2.77,Safe
+STU-1308,Vikram Mehta,Information Tech,Female,23.3,86.7,15.2,84.2,87.6,0,Associate Degree,No,83.2,3.29,Safe
+STU-1309,Pooja Bose,Computer Science,Male,22.9,95.8,18.0,89.3,89.3,0,Associate Degree,No,79.4,3.16,Safe
+STU-1310,Kabir Verma,Computer Science,Male,21.3,84.5,18.5,85.2,79.7,0,Master Degree,Yes,72.5,2.89,Safe
+STU-1311,Aarav Iyer,Mechanical Eng.,Male,20.2,79.3,13.4,81.7,69.1,0,Associate Degree,Yes,77.8,3.16,Safe
+STU-1312,Rohan Singh,Electronics & Comm.,Male,16.3,89.4,10.7,80.0,76.6,0,Doctorate,No,71.8,2.8,Safe
+STU-1313,Diya Mehta,Data Science,Male,11.5,84.2,10.0,73.1,74.2,0,Bachelor Degree,No,65.5,2.76,Safe
+STU-1314,Vikram Patel,Mechanical Eng.,Female,28.3,99.5,20.4,88.4,79.5,0,Doctorate,No,77.7,3.18,Safe
+STU-1315,Rahul Rao,Electronics & Comm.,Female,3.3,56.9,3.8,35.1,50.2,0,High School,No,41.6,1.68,At-Risk
+STU-1316,Aditi Gupta,Information Tech,Male,12.3,84.1,12.6,68.7,78.7,0,Bachelor Degree,Yes,66.2,2.64,Safe
+STU-1317,Nikhil Nair,Information Tech,Female,9.9,75.6,11.3,66.4,75.2,0,Master Degree,No,55.0,2.28,Safe
+STU-1318,Aditya Reddy,Data Science,Female,26.1,89.2,18.3,90.6,84.2,0,Master Degree,Yes,76.1,2.89,Safe
+STU-1319,Varun Bose,Computer Science,Male,5.2,68.4,3.4,52.8,36.4,2,Associate Degree,Yes,36.9,1.45,At-Risk
+STU-1320,Akash Patel,Mechanical Eng.,Male,26.9,90.1,18.6,84.8,88.9,0,Master Degree,Yes,86.4,3.39,Safe
+STU-1321,Akash Gupta,Electronics & Comm.,Female,19.9,91.0,15.8,88.2,90.3,0,Master Degree,Yes,85.7,3.51,Safe
+STU-1322,Shreya Iyer,Data Science,Male,2.7,76.0,5.8,64.9,72.2,1,Associate Degree,No,52.3,2.18,At-Risk
+STU-1323,Priya Bhat,Electronics & Comm.,Male,20.2,78.0,5.4,69.6,77.3,1,Doctorate,Yes,61.5,2.49,Safe
+STU-1324,Varun Patel,Computer Science,Male,1.0,74.1,5.6,60.3,67.6,0,Bachelor Degree,No,60.9,2.4,Safe
+STU-1325,Karan Deshmukh,Information Tech,Female,16.0,80.0,9.5,63.8,81.0,0,Bachelor Degree,Yes,69.8,2.73,Safe
+STU-1326,Dev Patel,Information Tech,Male,12.3,73.8,10.6,70.8,87.4,0,Associate Degree,No,64.8,2.62,Safe
+STU-1327,Varun Chatterjee,Mechanical Eng.,Female,7.3,76.0,6.2,58.0,39.2,1,Bachelor Degree,No,55.2,2.23,At-Risk
+STU-1328,Karan Verma,Computer Science,Female,10.0,81.9,11.8,60.1,81.0,0,Associate Degree,No,62.4,2.46,Safe
+STU-1329,Isha Rao,Data Science,Male,8.3,66.4,5.2,61.6,54.7,2,Associate Degree,Yes,39.1,1.61,At-Risk
+STU-1330,Nandini Patel,Electronics & Comm.,Female,11.2,82.7,9.7,83.5,69.9,0,Associate Degree,No,63.0,2.5,Safe
+STU-1331,Dev Joshi,Mechanical Eng.,Female,25.4,93.2,13.3,87.9,83.4,0,Master Degree,No,75.7,2.89,Safe
+STU-1332,Aryan Bhat,Data Science,Female,5.4,61.7,4.0,51.3,55.3,0,Associate Degree,Yes,42.1,1.77,At-Risk
+STU-1333,Siddharth Bhat,Computer Science,Female,12.3,78.9,7.2,63.6,66.9,0,High School,Yes,59.2,2.34,Safe
+STU-1334,Dev Bhat,Electronics & Comm.,Female,15.2,80.8,7.0,78.6,54.9,0,Doctorate,No,61.0,2.35,Safe
+STU-1335,Dev Sharma,Information Tech,Male,15.2,75.0,9.2,59.8,70.3,0,Master Degree,No,55.6,2.13,Safe
+STU-1336,Meera Malhotra,Electronics & Comm.,Male,14.7,99.3,19.3,91.9,90.6,0,Bachelor Degree,Yes,82.7,3.15,Safe
+STU-1337,Isha Bose,Information Tech,Male,19.3,90.0,22.8,88.6,64.7,0,Master Degree,Yes,66.6,2.63,Safe
+STU-1338,Arjun Mehta,Data Science,Male,28.1,85.2,12.3,98.4,86.1,0,Doctorate,No,80.4,3.19,Safe
+STU-1339,Aditi Chopra,Information Tech,Female,25.0,87.0,14.6,100.0,79.4,0,Bachelor Degree,Yes,82.7,3.14,Safe
+STU-1340,Arjun Singh,Information Tech,Female,17.0,82.3,6.2,69.3,63.5,0,Master Degree,No,62.9,2.48,Safe
+STU-1341,Meera Iyer,Computer Science,Female,10.1,82.3,13.2,69.9,64.5,0,Master Degree,No,59.7,2.42,Safe
+STU-1342,Nandini Mehta,Information Tech,Female,7.2,54.1,5.9,56.9,46.6,0,Associate Degree,No,44.7,1.82,At-Risk
+STU-1343,Swati Bhat,Electronics & Comm.,Female,11.8,83.8,3.2,69.3,70.7,1,Master Degree,Yes,52.0,2.03,At-Risk
+STU-1344,Karan Bose,Information Tech,Male,21.1,83.0,7.5,85.4,91.2,0,Bachelor Degree,Yes,63.0,2.48,Safe
+STU-1345,Rohan Malhotra,Mechanical Eng.,Male,18.1,78.8,7.7,65.1,92.7,1,Associate Degree,Yes,65.3,2.65,Safe
+STU-1346,Aryan Chopra,Computer Science,Female,15.8,64.5,3.5,66.4,47.6,0,Bachelor Degree,No,50.5,1.99,At-Risk
+STU-1347,Kavya Choudhury,Electronics & Comm.,Female,6.6,56.0,2.9,45.4,63.4,1,Bachelor Degree,No,38.2,1.49,At-Risk
+STU-1348,Vivaan Nair,Electronics & Comm.,Male,25.4,95.0,11.5,93.5,88.8,0,Bachelor Degree,Yes,78.9,3.14,Safe
+STU-1349,Rahul Verma,Mechanical Eng.,Female,6.2,75.7,3.1,60.9,47.9,3,Associate Degree,No,34.1,1.4,At-Risk
+STU-1350,Rohan Malhotra,Mechanical Eng.,Male,14.7,90.5,12.5,81.0,66.9,1,Doctorate,No,64.4,2.62,Safe
+STU-1351,Riya Mehta,Computer Science,Female,17.1,89.8,7.7,72.2,56.2,0,Master Degree,Yes,59.7,2.35,Safe
+STU-1352,Pooja Rao,Mechanical Eng.,Male,19.4,93.3,11.4,89.5,67.1,0,Master Degree,Yes,70.8,2.7,Safe
+STU-1353,Kavya Menon,Information Tech,Female,16.9,85.9,12.1,75.3,76.1,0,High School,Yes,71.7,2.79,Safe
+STU-1354,Vivaan Rao,Information Tech,Male,20.1,79.4,11.3,65.2,79.3,0,Doctorate,Yes,64.3,2.49,Safe
+STU-1355,Varun Menon,Data Science,Male,14.8,91.3,9.3,59.2,78.0,0,Associate Degree,No,57.3,2.36,Safe
+STU-1356,Rahul Mehta,Electronics & Comm.,Male,14.4,86.1,13.3,89.3,78.3,1,Doctorate,No,60.2,2.33,Safe
+STU-1357,Tanvi Choudhury,Computer Science,Male,7.2,68.6,4.9,41.1,38.7,3,High School,No,25.7,1.15,At-Risk
+STU-1358,Sneha Bhat,Electronics & Comm.,Female,7.5,67.8,8.7,31.1,56.4,3,Bachelor Degree,Yes,21.4,1.0,At-Risk
+STU-1359,Kabir Bhat,Mechanical Eng.,Female,6.3,61.3,1.5,49.2,34.4,1,High School,Yes,36.1,1.53,At-Risk
+STU-1360,Aryan Choudhury,Data Science,Male,22.1,83.3,14.7,95.9,84.4,0,Master Degree,Yes,73.5,2.89,Safe
+STU-1361,Diya Bhat,Computer Science,Female,2.2,40.0,3.6,58.6,63.2,2,Bachelor Degree,No,32.4,1.23,At-Risk
+STU-1362,Arjun Deshmukh,Data Science,Male,6.2,82.1,10.8,69.9,71.3,0,Master Degree,Yes,55.5,2.2,Safe
+STU-1363,Karan Mehta,Information Tech,Female,14.2,83.7,8.5,75.4,62.3,0,Doctorate,Yes,61.1,2.46,Safe
+STU-1364,Aditya Chatterjee,Electronics & Comm.,Male,7.2,70.4,1.0,65.9,46.3,2,Bachelor Degree,Yes,31.4,1.37,At-Risk
+STU-1365,Arjun Gupta,Information Tech,Male,13.0,76.3,14.7,67.1,66.0,0,Bachelor Degree,No,61.7,2.44,Safe
+STU-1366,Kavya Choudhury,Data Science,Female,22.6,91.6,13.9,79.9,90.3,0,Doctorate,Yes,85.6,3.43,Safe
+STU-1367,Meera Joshi,Electronics & Comm.,Female,25.4,91.0,21.5,97.6,98.3,0,Associate Degree,No,85.1,3.56,Safe
+STU-1368,Arjun Choudhury,Electronics & Comm.,Male,15.2,85.7,11.2,75.9,68.8,0,High School,No,64.5,2.67,Safe
+STU-1369,Aryan Chatterjee,Information Tech,Male,13.3,82.9,9.3,83.8,53.4,0,Associate Degree,No,61.8,2.45,Safe
+STU-1370,Tanvi Verma,Electronics & Comm.,Female,13.7,80.4,10.8,67.1,82.5,0,Master Degree,No,71.8,2.83,Safe
+STU-1371,Dev Nair,Information Tech,Female,19.8,87.4,7.3,76.9,59.4,0,Doctorate,Yes,66.6,2.48,Safe
+STU-1372,Kabir Chatterjee,Electronics & Comm.,Female,9.2,61.3,2.1,56.7,52.8,0,High School,No,42.5,1.68,At-Risk
+STU-1373,Meera Verma,Mechanical Eng.,Female,8.6,78.9,3.5,44.7,55.4,3,High School,Yes,32.7,1.26,At-Risk
+STU-1374,Diya Reddy,Information Tech,Male,5.7,46.8,7.1,52.9,45.5,0,Bachelor Degree,Yes,37.3,1.57,At-Risk
+STU-1375,Ananya Iyer,Computer Science,Female,1.7,77.5,4.6,57.3,60.5,0,Bachelor Degree,No,45.3,1.79,At-Risk
+STU-1376,Neha Kumar,Electronics & Comm.,Male,16.7,80.4,7.7,77.5,75.2,0,High School,No,69.3,2.73,Safe
+STU-1377,Swati Patel,Mechanical Eng.,Female,23.6,88.4,19.4,86.8,67.7,0,Bachelor Degree,No,72.3,2.81,Safe
+STU-1378,Swati Gupta,Information Tech,Female,8.3,82.5,5.9,78.9,77.4,0,Master Degree,Yes,62.1,2.43,Safe
+STU-1379,Shreya Choudhury,Data Science,Male,19.9,75.8,14.2,67.1,75.7,0,High School,Yes,61.0,2.36,Safe
+STU-1380,Tanvi Bhat,Mechanical Eng.,Female,11.4,85.6,6.1,78.1,79.8,0,Bachelor Degree,No,61.6,2.44,Safe
+STU-1381,Vikram Chatterjee,Mechanical Eng.,Male,29.6,87.4,14.5,87.8,92.2,0,Associate Degree,Yes,87.3,3.58,Safe
+STU-1382,Kabir Kumar,Computer Science,Male,14.8,94.7,7.6,61.7,54.1,0,Master Degree,Yes,63.4,2.55,Safe
+STU-1383,Dev Nair,Data Science,Female,6.5,67.8,4.9,67.3,39.5,2,Associate Degree,Yes,34.0,1.41,At-Risk
+STU-1384,Shreya Joshi,Mechanical Eng.,Female,5.0,72.1,5.4,66.2,37.0,1,Bachelor Degree,No,48.3,2.01,At-Risk
+STU-1385,Siddharth Deshmukh,Mechanical Eng.,Male,8.2,77.9,7.3,79.8,61.5,0,Master Degree,Yes,62.5,2.44,Safe
+STU-1386,Riya Reddy,Data Science,Female,7.8,66.6,2.5,41.8,63.7,1,Associate Degree,No,41.1,1.69,At-Risk
+STU-1387,Swati Singh,Computer Science,Male,10.3,92.5,5.7,75.5,80.1,1,Associate Degree,No,56.7,2.4,Safe
+STU-1388,Vikram Nair,Electronics & Comm.,Male,20.8,71.0,12.7,72.6,77.9,0,Bachelor Degree,Yes,62.6,2.59,Safe
+STU-1389,Dev Chopra,Data Science,Female,16.1,82.8,11.4,82.5,74.3,0,Master Degree,Yes,69.4,2.83,Safe
+STU-1390,Tanvi Gupta,Information Tech,Male,10.0,79.6,9.6,66.8,81.6,0,Bachelor Degree,Yes,54.7,2.24,At-Risk
+STU-1391,Pooja Mehta,Data Science,Female,6.6,69.8,4.1,41.5,59.7,0,Bachelor Degree,No,49.1,1.86,At-Risk
+STU-1392,Vivaan Bose,Mechanical Eng.,Male,4.1,74.5,4.8,53.0,56.1,1,Bachelor Degree,No,43.8,1.68,At-Risk
+STU-1393,Nikhil Chatterjee,Data Science,Female,8.5,90.0,8.5,72.3,65.4,0,Doctorate,Yes,60.0,2.4,Safe
+STU-1394,Vikram Menon,Electronics & Comm.,Female,15.0,88.7,10.5,64.3,61.3,0,High School,Yes,66.2,2.74,Safe
+STU-1395,Siddharth Chatterjee,Mechanical Eng.,Female,15.2,75.4,10.1,65.8,80.9,0,Associate Degree,Yes,69.1,2.76,Safe
+STU-1396,Arjun Menon,Information Tech,Female,28.3,87.3,17.8,100.0,80.9,0,Master Degree,No,80.7,3.26,Safe
+STU-1397,Akash Bhat,Information Tech,Female,12.4,58.2,2.8,53.0,63.0,0,Bachelor Degree,Yes,59.5,2.47,At-Risk
+STU-1398,Shreya Verma,Information Tech,Female,7.2,81.7,4.5,41.9,38.1,1,Bachelor Degree,Yes,44.9,1.84,At-Risk
+STU-1399,Vikram Bhat,Computer Science,Male,12.2,94.0,11.3,66.6,52.8,1,High School,No,58.2,2.25,At-Risk
+STU-1400,Rahul Nair,Computer Science,Female,18.3,89.6,7.8,56.0,60.4,1,High School,Yes,52.2,2.06,At-Risk
+STU-1401,Sneha Chopra,Computer Science,Female,13.7,83.0,9.0,70.0,59.7,0,Master Degree,Yes,59.8,2.3,Safe
+STU-1402,Diya Joshi,Information Tech,Female,1.8,62.1,6.4,71.0,37.7,1,Bachelor Degree,No,37.1,1.5,At-Risk
+STU-1403,Pooja Malhotra,Information Tech,Male,24.7,94.0,25.8,85.7,75.4,0,Bachelor Degree,Yes,86.0,3.37,Safe
+STU-1404,Riya Chatterjee,Data Science,Male,12.7,84.0,7.3,91.3,81.7,1,Associate Degree,Yes,58.1,2.4,Safe
+STU-1405,Priya Malhotra,Mechanical Eng.,Female,20.7,92.3,19.4,89.8,77.0,0,Master Degree,No,73.6,2.94,Safe
+STU-1406,Siddharth Sharma,Computer Science,Male,13.7,76.5,10.0,83.6,73.9,0,Doctorate,No,76.5,3.03,Safe
+STU-1407,Sneha Chatterjee,Information Tech,Female,21.2,95.6,18.2,84.1,87.3,0,Associate Degree,Yes,77.2,3.3,Safe
+STU-1408,Pooja Iyer,Electronics & Comm.,Female,26.1,91.1,24.2,85.0,85.2,0,Bachelor Degree,No,90.6,3.56,Safe
+STU-1409,Diya Deshmukh,Mechanical Eng.,Female,14.5,77.5,8.8,80.5,68.4,0,Associate Degree,Yes,57.5,2.33,Safe
+STU-1410,Rohan Reddy,Mechanical Eng.,Female,15.5,87.8,7.8,84.2,72.9,0,Doctorate,No,70.6,2.93,Safe
+STU-1411,Riya Verma,Data Science,Female,14.2,84.5,5.5,78.0,80.9,0,Master Degree,No,76.2,3.06,Safe
+STU-1412,Meera Chatterjee,Data Science,Female,21.5,85.8,16.5,85.4,89.6,0,Doctorate,Yes,72.6,2.89,Safe
+STU-1413,Meera Bhat,Electronics & Comm.,Male,4.8,52.7,4.2,45.3,20.0,1,Associate Degree,No,35.6,1.41,At-Risk
+STU-1414,Varun Iyer,Mechanical Eng.,Female,14.7,91.2,15.2,75.3,80.2,1,Bachelor Degree,No,75.9,3.08,Safe
+STU-1415,Kabir Verma,Mechanical Eng.,Female,4.9,62.0,4.3,51.0,50.6,0,Bachelor Degree,Yes,38.6,1.57,At-Risk
+STU-1416,Priya Choudhury,Computer Science,Male,6.3,72.8,1.0,65.8,65.2,1,Bachelor Degree,Yes,36.8,1.45,At-Risk
+STU-1417,Shreya Menon,Electronics & Comm.,Male,3.5,59.4,7.6,60.0,39.8,0,High School,No,35.1,1.45,At-Risk
+STU-1418,Tanvi Malhotra,Data Science,Male,17.6,85.9,9.4,72.5,67.8,0,Associate Degree,Yes,67.1,2.66,Safe
+STU-1419,Tanvi Iyer,Information Tech,Female,22.0,86.5,17.3,88.6,91.5,0,Associate Degree,No,77.6,3.2,Safe
+STU-1420,Sneha Chatterjee,Mechanical Eng.,Female,10.9,88.2,10.3,76.7,73.5,0,Associate Degree,No,62.3,2.53,Safe
+STU-1421,Kabir Kumar,Electronics & Comm.,Female,6.3,87.6,10.0,74.0,74.6,0,Bachelor Degree,No,59.8,2.35,Safe
+STU-1422,Rohan Chatterjee,Data Science,Female,9.9,65.2,7.9,83.1,55.4,0,Master Degree,No,55.9,2.14,Safe
+STU-1423,Riya Mehta,Mechanical Eng.,Female,9.1,83.0,13.1,69.0,56.4,0,Associate Degree,Yes,59.8,2.5,Safe
+STU-1424,Shreya Bhat,Mechanical Eng.,Female,25.3,91.0,25.8,86.6,83.7,0,Master Degree,Yes,89.8,3.47,Safe
+STU-1425,Nandini Rao,Electronics & Comm.,Female,7.6,80.8,11.4,75.0,70.0,0,Associate Degree,Yes,56.1,2.31,Safe
+STU-1426,Aditi Reddy,Information Tech,Female,21.4,86.8,9.7,75.8,80.7,1,Master Degree,Yes,72.4,2.93,Safe
+STU-1427,Swati Singh,Mechanical Eng.,Male,15.1,82.2,5.7,76.3,63.5,0,Master Degree,No,59.0,2.4,Safe
+STU-1428,Vikram Chatterjee,Electronics & Comm.,Male,7.6,92.5,5.8,74.6,59.4,0,Bachelor Degree,No,56.2,2.12,Safe
+STU-1429,Karan Choudhury,Information Tech,Female,28.3,94.4,25.2,80.1,96.8,0,Associate Degree,No,90.8,3.55,Safe
+STU-1430,Nikhil Rao,Data Science,Male,28.0,90.9,17.8,86.2,85.4,0,Associate Degree,Yes,80.8,3.32,Safe
+STU-1431,Diya Bhat,Data Science,Female,16.7,76.3,7.2,82.7,58.9,1,Bachelor Degree,Yes,55.5,2.26,Safe
+STU-1432,Priya Bhat,Mechanical Eng.,Male,14.7,85.2,11.7,66.1,68.4,0,Associate Degree,No,65.3,2.74,Safe
+STU-1433,Aditya Rao,Data Science,Male,1.1,64.4,8.3,40.6,40.8,1,High School,Yes,36.9,1.41,At-Risk
+STU-1434,Neha Chatterjee,Electronics & Comm.,Male,21.4,91.1,19.0,91.5,89.9,0,Associate Degree,Yes,79.9,3.23,Safe
+STU-1435,Vikram Gupta,Electronics & Comm.,Female,18.0,87.4,15.9,84.6,86.0,0,Associate Degree,Yes,73.6,3.02,Safe
+STU-1436,Isha Chatterjee,Computer Science,Female,21.7,95.1,14.3,91.4,91.9,0,Bachelor Degree,Yes,83.6,3.28,Safe
+STU-1437,Nikhil Sharma,Information Tech,Female,19.5,96.9,24.9,89.1,80.7,0,Master Degree,No,80.3,3.29,Safe
+STU-1438,Rohan Iyer,Computer Science,Female,21.5,96.8,11.0,93.4,92.1,0,Associate Degree,No,80.8,3.26,Safe
+STU-1439,Pooja Verma,Mechanical Eng.,Male,25.6,89.1,19.4,95.9,91.9,0,Associate Degree,No,82.7,3.29,Safe
+STU-1440,Aarav Sharma,Mechanical Eng.,Male,31.2,87.5,14.4,90.1,96.6,0,Bachelor Degree,Yes,87.5,3.43,Safe
+STU-1441,Karan Nair,Mechanical Eng.,Male,11.0,94.8,10.6,77.0,65.7,0,Doctorate,Yes,66.4,2.75,Safe
+STU-1442,Siddharth Deshmukh,Data Science,Female,17.7,83.2,11.3,72.2,62.6,1,Doctorate,Yes,63.6,2.66,Safe
+STU-1443,Vivaan Singh,Data Science,Male,17.5,76.6,6.4,71.6,71.2,1,Bachelor Degree,No,57.2,2.17,Safe
+STU-1444,Shreya Malhotra,Computer Science,Male,9.4,64.7,12.3,74.1,80.4,0,Master Degree,No,61.7,2.46,Safe
+STU-1445,Aryan Singh,Data Science,Male,8.6,91.5,13.7,70.9,75.6,0,High School,Yes,63.6,2.45,Safe
+STU-1446,Rohan Malhotra,Information Tech,Male,5.9,81.5,14.5,81.2,55.9,1,High School,No,58.7,2.34,Safe
+STU-1447,Dev Sharma,Data Science,Female,9.1,78.5,10.9,79.4,72.3,1,Master Degree,No,57.9,2.24,Safe
+STU-1448,Dev Rao,Mechanical Eng.,Female,13.4,73.6,5.0,85.6,78.3,0,Associate Degree,Yes,71.7,2.83,Safe
+STU-1449,Aditya Bhat,Information Tech,Male,20.7,77.4,12.9,74.2,69.1,1,High School,Yes,68.4,2.76,Safe
+STU-1450,Riya Nair,Mechanical Eng.,Female,24.0,93.0,9.5,90.7,84.1,0,Doctorate,Yes,71.8,2.83,Safe
+STU-1451,Aarav Kumar,Mechanical Eng.,Female,28.0,90.0,12.9,84.4,75.6,0,Associate Degree,No,78.0,2.97,Safe
+STU-1452,Swati Patel,Electronics & Comm.,Female,19.1,91.9,19.7,84.7,85.8,0,Master Degree,No,73.2,2.84,Safe
+STU-1453,Aryan Malhotra,Mechanical Eng.,Male,15.6,77.7,10.4,66.9,72.6,0,Associate Degree,No,68.7,2.73,Safe
+STU-1454,Shreya Patel,Mechanical Eng.,Male,24.9,92.0,14.7,88.0,89.5,0,Bachelor Degree,Yes,76.2,2.97,Safe
+STU-1455,Sneha Singh,Computer Science,Male,17.3,67.6,11.0,67.1,66.4,0,Bachelor Degree,No,55.7,2.28,Safe
+STU-1456,Aarav Nair,Information Tech,Male,16.8,82.0,5.9,72.2,64.3,0,Bachelor Degree,Yes,60.0,2.39,Safe
+STU-1457,Priya Malhotra,Information Tech,Female,7.4,62.8,5.3,45.4,64.5,1,Bachelor Degree,Yes,40.5,1.53,At-Risk
+STU-1458,Rohan Mehta,Electronics & Comm.,Female,7.2,66.5,6.2,37.0,37.8,1,High School,Yes,29.5,1.15,At-Risk
+STU-1459,Rohan Nair,Data Science,Male,12.4,88.1,8.7,71.3,64.0,0,Master Degree,Yes,57.1,2.41,Safe
+STU-1460,Arjun Chopra,Computer Science,Female,16.9,78.1,11.1,85.3,69.7,0,Bachelor Degree,Yes,73.1,2.84,Safe
+STU-1461,Vikram Chopra,Electronics & Comm.,Female,3.2,74.3,4.8,45.1,43.4,0,High School,No,35.5,1.38,At-Risk
+STU-1462,Isha Deshmukh,Information Tech,Male,4.0,54.4,4.4,57.7,47.7,0,High School,No,43.8,1.88,At-Risk
+STU-1463,Rohan Chopra,Mechanical Eng.,Female,30.2,99.5,14.1,86.4,86.3,0,Doctorate,No,85.3,3.52,Safe
+STU-1464,Nandini Malhotra,Computer Science,Male,11.7,86.7,10.2,61.7,69.2,0,Master Degree,No,60.1,2.47,Safe
+STU-1465,Nikhil Patel,Mechanical Eng.,Female,13.8,84.2,2.9,72.7,72.3,0,Master Degree,Yes,66.5,2.62,Safe
+STU-1466,Isha Iyer,Electronics & Comm.,Male,17.7,78.6,12.5,85.1,77.4,0,Master Degree,No,68.9,2.84,Safe
+STU-1467,Vivaan Patel,Data Science,Male,10.2,55.5,7.7,48.1,64.6,0,Bachelor Degree,No,42.2,1.71,At-Risk
+STU-1468,Tanvi Choudhury,Computer Science,Male,10.1,73.1,2.8,34.0,49.0,3,High School,No,24.9,1.0,At-Risk
+STU-1469,Aditi Choudhury,Mechanical Eng.,Female,31.4,92.9,14.6,79.3,86.2,0,Bachelor Degree,Yes,78.6,3.22,Safe
+STU-1470,Vivaan Joshi,Computer Science,Male,15.6,83.8,7.3,86.1,76.9,0,Doctorate,No,69.5,2.81,Safe
+STU-1471,Rahul Rao,Information Tech,Male,12.0,82.2,12.5,69.6,56.2,0,Doctorate,No,65.5,2.59,Safe
+STU-1472,Vivaan Joshi,Electronics & Comm.,Female,27.7,92.4,15.4,87.0,90.5,0,Doctorate,Yes,76.6,3.04,Safe
+STU-1473,Isha Malhotra,Electronics & Comm.,Male,32.7,94.3,13.7,85.3,87.3,0,Associate Degree,No,81.4,3.35,Safe
+STU-1474,Aryan Singh,Electronics & Comm.,Male,14.7,84.5,9.2,76.7,72.5,0,Master Degree,No,63.2,2.56,Safe
+STU-1475,Pooja Reddy,Mechanical Eng.,Female,22.7,88.5,6.0,76.8,84.1,1,Doctorate,Yes,61.1,2.47,Safe
+STU-1476,Aarav Bose,Data Science,Male,24.8,86.9,17.5,95.7,98.6,0,Bachelor Degree,Yes,84.0,3.56,Safe
+STU-1477,Siddharth Deshmukh,Information Tech,Female,14.9,68.5,11.2,69.6,88.3,0,Associate Degree,No,62.8,2.55,Safe
+STU-1478,Kabir Iyer,Information Tech,Male,8.0,68.6,9.6,57.4,68.1,1,Master Degree,Yes,49.8,1.97,At-Risk
+STU-1479,Kavya Choudhury,Mechanical Eng.,Male,20.5,91.9,16.1,91.8,78.4,0,Associate Degree,No,79.7,2.97,Safe
+STU-1480,Priya Verma,Electronics & Comm.,Female,4.4,57.6,3.3,70.9,50.3,0,High School,No,42.5,1.72,At-Risk
+STU-1481,Riya Chopra,Data Science,Female,8.9,62.1,3.5,33.0,49.3,1,Bachelor Degree,Yes,32.8,1.16,At-Risk
+STU-1482,Nikhil Rao,Information Tech,Female,16.7,79.3,7.1,75.7,68.1,1,High School,Yes,66.2,2.71,Safe
+STU-1483,Kabir Singh,Mechanical Eng.,Female,11.4,93.9,14.4,73.1,62.3,1,Bachelor Degree,No,54.4,2.17,At-Risk
+STU-1484,Rahul Bose,Mechanical Eng.,Female,21.2,95.7,24.8,84.4,79.4,0,Bachelor Degree,Yes,79.8,3.28,Safe
+STU-1485,Neha Reddy,Electronics & Comm.,Male,13.6,83.4,7.3,75.5,75.1,0,High School,Yes,66.1,2.66,Safe
+STU-1486,Siddharth Iyer,Electronics & Comm.,Male,20.0,95.8,15.1,93.5,90.0,0,Associate Degree,Yes,77.0,3.11,Safe
+STU-1487,Shreya Kumar,Mechanical Eng.,Male,16.7,87.8,6.8,69.4,69.5,0,Master Degree,No,71.2,2.81,Safe
+STU-1488,Ananya Bose,Information Tech,Male,14.4,74.0,9.2,71.7,67.7,0,Bachelor Degree,Yes,68.6,2.59,Safe
+STU-1489,Diya Reddy,Computer Science,Male,5.9,59.5,4.7,52.8,50.9,3,High School,Yes,26.5,1.15,At-Risk
+STU-1490,Riya Gupta,Data Science,Female,5.0,65.5,5.3,58.7,48.1,0,High School,Yes,51.1,1.96,At-Risk
+STU-1491,Arjun Chatterjee,Information Tech,Male,26.6,95.2,15.4,85.3,81.1,0,Associate Degree,Yes,74.1,3.06,Safe
+STU-1492,Dev Gupta,Data Science,Male,12.3,79.8,10.2,83.2,64.0,0,High School,No,58.5,2.51,Safe
+STU-1493,Aditi Mehta,Data Science,Male,23.0,84.4,14.2,82.8,83.7,0,Associate Degree,No,74.7,3.06,Safe
+STU-1494,Rahul Sharma,Data Science,Female,6.5,79.2,6.5,72.4,42.5,1,High School,No,45.4,1.82,At-Risk
+STU-1495,Aryan Reddy,Mechanical Eng.,Female,13.0,81.6,10.0,73.7,71.6,1,Bachelor Degree,No,47.2,1.94,At-Risk
+STU-1496,Aditya Bose,Computer Science,Male,30.6,91.5,20.4,74.9,84.4,0,Associate Degree,No,76.1,3.04,Safe
+STU-1497,Karan Rao,Mechanical Eng.,Male,17.5,79.7,11.1,70.2,65.2,1,Doctorate,No,58.6,2.2,Safe
+STU-1498,Ananya Chopra,Electronics & Comm.,Male,14.4,78.4,11.9,71.6,68.8,0,Bachelor Degree,Yes,62.3,2.61,Safe
+STU-1499,Swati Mehta,Mechanical Eng.,Female,4.8,55.3,4.1,57.9,49.9,0,High School,Yes,44.8,1.78,At-Risk
+STU-1500,Arjun Reddy,Data Science,Male,27.9,93.1,14.0,83.9,83.9,0,Master Degree,Yes,77.0,3.11,Safe
+STU-1501,Pooja Iyer,Mechanical Eng.,Male,9.4,92.6,9.0,81.5,55.6,0,Doctorate,No,73.5,3.03,Safe
+STU-1502,Vivaan Bhat,Information Tech,Male,17.7,92.0,18.2,78.5,85.4,0,Associate Degree,Yes,68.0,2.77,Safe
+STU-1503,Dev Chatterjee,Data Science,Female,14.4,77.2,11.0,51.2,63.3,0,Bachelor Degree,No,50.6,2.01,At-Risk
+STU-1504,Vivaan Gupta,Electronics & Comm.,Male,15.5,81.3,11.2,88.9,66.7,0,Bachelor Degree,Yes,76.4,3.24,Safe
+STU-1505,Aarav Choudhury,Data Science,Female,14.0,88.1,5.4,78.2,87.8,0,Doctorate,No,72.2,2.99,Safe
+STU-1506,Karan Choudhury,Information Tech,Male,4.5,49.9,2.1,69.2,46.2,1,Bachelor Degree,No,40.5,1.73,At-Risk
+STU-1507,Neha Gupta,Computer Science,Female,11.9,85.2,9.6,61.7,72.5,0,Bachelor Degree,Yes,71.2,2.85,Safe
+STU-1508,Diya Nair,Data Science,Male,25.9,92.8,11.6,90.4,95.2,0,Associate Degree,Yes,78.9,3.27,Safe
+STU-1509,Aryan Choudhury,Mechanical Eng.,Female,1.0,55.9,3.7,58.6,41.7,2,High School,Yes,25.1,1.0,At-Risk
+STU-1510,Kabir Chatterjee,Electronics & Comm.,Female,15.7,92.7,10.3,81.5,62.9,0,Doctorate,No,66.0,2.6,Safe
+STU-1511,Aditya Deshmukh,Computer Science,Female,13.7,69.0,6.5,69.3,59.1,0,High School,No,46.3,1.94,At-Risk
+STU-1512,Vikram Nair,Electronics & Comm.,Female,17.4,82.6,7.7,75.2,65.1,0,High School,No,65.8,2.6,Safe
+STU-1513,Nikhil Singh,Data Science,Male,5.7,74.8,3.6,47.9,43.8,1,Bachelor Degree,Yes,33.7,1.26,At-Risk
+STU-1514,Isha Mehta,Data Science,Female,14.4,76.5,7.5,87.2,64.5,0,High School,Yes,58.1,2.2,Safe
+STU-1515,Aryan Chopra,Mechanical Eng.,Male,19.5,88.4,22.1,89.2,88.7,0,Master Degree,No,80.6,3.34,Safe
+STU-1516,Arjun Joshi,Electronics & Comm.,Male,10.3,81.9,8.5,73.8,70.0,0,Associate Degree,Yes,66.8,2.73,Safe
+STU-1517,Nikhil Deshmukh,Computer Science,Male,11.9,86.4,14.6,70.8,77.1,0,Associate Degree,Yes,61.5,2.49,Safe
+STU-1518,Meera Iyer,Electronics & Comm.,Female,19.4,68.6,8.5,81.5,72.7,0,Master Degree,No,67.0,2.86,Safe
+STU-1519,Vivaan Bhat,Electronics & Comm.,Male,5.9,49.8,2.6,45.3,27.6,0,Bachelor Degree,No,32.7,1.22,At-Risk
+STU-1520,Rohan Patel,Information Tech,Male,23.6,93.6,18.9,90.4,85.7,0,Doctorate,No,83.8,3.41,Safe
+STU-1521,Vikram Choudhury,Electronics & Comm.,Female,8.6,68.0,8.2,63.8,68.9,0,High School,Yes,44.5,1.73,At-Risk
+STU-1522,Aditi Bose,Electronics & Comm.,Female,14.8,83.4,4.1,77.2,64.1,0,Associate Degree,No,51.2,2.21,At-Risk
+STU-1523,Sneha Kumar,Information Tech,Male,8.2,67.3,5.4,65.3,45.5,1,Associate Degree,No,40.7,1.64,At-Risk
+STU-1524,Arjun Chatterjee,Mechanical Eng.,Female,26.3,89.5,17.4,83.6,94.6,0,Associate Degree,No,75.6,3.12,Safe
+STU-1525,Shreya Rao,Computer Science,Female,20.4,88.1,20.3,94.7,91.4,0,Associate Degree,Yes,86.9,3.41,Safe
+STU-1526,Aarav Reddy,Data Science,Male,15.2,77.8,9.3,82.7,66.9,0,High School,No,61.6,2.46,Safe
+STU-1527,Sneha Kumar,Data Science,Male,16.7,80.7,5.3,82.3,64.3,1,Bachelor Degree,Yes,59.4,2.35,Safe
+STU-1528,Rohan Chopra,Electronics & Comm.,Female,6.2,87.7,13.3,66.1,79.3,0,Associate Degree,No,65.5,2.55,Safe
+STU-1529,Diya Malhotra,Electronics & Comm.,Female,8.5,66.4,4.2,63.6,41.2,1,High School,No,41.1,1.6,At-Risk
+STU-1530,Akash Reddy,Computer Science,Female,16.4,82.9,4.8,72.3,81.6,0,High School,No,62.7,2.52,Safe
+STU-1531,Vivaan Bhat,Data Science,Male,18.9,93.3,14.0,86.1,88.9,0,Bachelor Degree,Yes,75.0,3.01,Safe
+STU-1532,Akash Rao,Computer Science,Male,21.6,87.4,10.7,79.7,92.6,0,Master Degree,No,81.6,3.41,Safe
+STU-1533,Neha Patel,Data Science,Male,19.8,94.5,12.5,86.9,90.7,0,Bachelor Degree,Yes,75.1,2.91,Safe
+STU-1534,Ananya Rao,Electronics & Comm.,Male,7.2,66.9,7.1,67.5,56.0,2,Bachelor Degree,No,45.6,1.86,At-Risk
+STU-1535,Nikhil Iyer,Data Science,Female,9.1,87.3,5.9,76.3,63.4,0,Doctorate,Yes,63.1,2.59,Safe
+STU-1536,Dev Gupta,Information Tech,Male,6.0,67.8,3.3,62.6,50.0,0,High School,Yes,41.8,1.73,At-Risk
+STU-1537,Dev Iyer,Information Tech,Male,8.1,79.1,2.9,64.9,26.1,3,High School,No,24.9,1.0,At-Risk
+STU-1538,Varun Reddy,Data Science,Female,10.3,71.5,10.7,72.3,74.4,1,Bachelor Degree,No,58.4,2.28,At-Risk
+STU-1539,Sneha Rao,Data Science,Female,26.6,91.7,11.3,95.3,83.9,0,Bachelor Degree,Yes,76.3,3.04,Safe
+STU-1540,Meera Chatterjee,Mechanical Eng.,Male,20.3,87.4,18.2,97.1,79.2,0,Bachelor Degree,No,87.1,3.52,Safe
+STU-1541,Nandini Joshi,Data Science,Female,9.1,85.6,9.3,69.6,72.5,0,Bachelor Degree,No,66.5,2.75,Safe
+STU-1542,Dev Verma,Data Science,Male,28.8,95.0,13.4,90.3,85.9,0,Bachelor Degree,Yes,80.9,3.3,Safe
+STU-1543,Meera Choudhury,Mechanical Eng.,Female,8.0,69.4,12.7,67.8,72.2,0,Bachelor Degree,Yes,58.5,2.33,Safe
+STU-1544,Swati Rao,Data Science,Male,13.8,82.4,11.7,66.3,78.9,0,Bachelor Degree,No,64.8,2.57,Safe
+STU-1545,Priya Gupta,Information Tech,Female,15.0,79.2,11.6,64.3,85.7,0,Doctorate,Yes,59.3,2.44,Safe
+STU-1546,Rohan Sharma,Electronics & Comm.,Female,21.7,89.3,12.6,90.3,88.5,0,Bachelor Degree,Yes,78.7,3.22,Safe
+STU-1547,Shreya Malhotra,Mechanical Eng.,Male,21.6,90.8,19.2,85.5,82.8,0,Associate Degree,No,76.9,2.98,Safe
+STU-1548,Sneha Malhotra,Computer Science,Female,10.6,61.0,4.2,60.7,51.5,1,High School,No,42.6,1.8,At-Risk
+STU-1549,Tanvi Patel,Mechanical Eng.,Female,20.9,94.2,21.5,80.7,86.6,0,Doctorate,Yes,76.1,3.06,Safe
+STU-1550,Rahul Bhat,Computer Science,Male,14.0,79.3,13.4,77.4,82.8,1,Associate Degree,No,72.3,2.77,Safe
+STU-1551,Diya Singh,Computer Science,Male,10.2,79.5,8.5,77.9,77.2,0,Master Degree,Yes,61.0,2.34,Safe
+STU-1552,Kavya Mehta,Computer Science,Male,24.1,97.8,14.0,89.3,85.8,0,Master Degree,No,85.7,3.2,Safe
+STU-1553,Ananya Sharma,Data Science,Female,10.1,58.7,7.8,47.1,57.4,1,Bachelor Degree,No,39.6,1.53,At-Risk
+STU-1554,Pooja Menon,Mechanical Eng.,Male,11.4,79.2,13.1,78.8,67.4,0,Bachelor Degree,Yes,60.6,2.19,Safe
+STU-1555,Vivaan Nair,Computer Science,Female,2.3,75.8,4.5,54.1,80.5,3,Bachelor Degree,No,38.8,1.53,At-Risk
+STU-1556,Kabir Menon,Computer Science,Male,29.6,91.1,26.6,88.0,78.4,0,Bachelor Degree,No,83.6,3.33,Safe
+STU-1557,Neha Bose,Mechanical Eng.,Male,14.2,84.7,11.6,91.2,68.2,0,Master Degree,Yes,64.5,2.51,Safe
+STU-1558,Nandini Bhat,Data Science,Male,32.4,89.7,14.1,93.3,86.9,0,Doctorate,Yes,80.5,3.35,Safe
+STU-1559,Nikhil Reddy,Mechanical Eng.,Female,9.7,86.7,6.7,75.6,59.7,0,Doctorate,Yes,63.0,2.58,Safe
+STU-1560,Aarav Verma,Computer Science,Female,17.9,74.0,7.1,81.2,81.2,0,Master Degree,Yes,64.6,2.51,Safe
+STU-1561,Pooja Malhotra,Data Science,Female,9.6,73.5,8.6,76.2,74.9,0,Doctorate,Yes,59.9,2.41,Safe
+STU-1562,Shreya Deshmukh,Data Science,Male,12.4,88.7,7.6,70.8,82.2,1,Master Degree,Yes,68.7,2.71,Safe
+STU-1563,Swati Rao,Electronics & Comm.,Female,15.7,84.3,11.2,69.6,66.8,1,High School,No,62.3,2.68,Safe
+STU-1564,Karan Verma,Data Science,Female,18.1,81.2,8.7,75.6,75.7,0,Master Degree,Yes,67.2,2.66,Safe
+STU-1565,Rohan Bose,Electronics & Comm.,Male,11.2,81.0,9.6,90.0,70.2,0,High School,No,73.8,2.87,Safe
+STU-1566,Priya Bose,Computer Science,Male,25.9,87.7,17.4,89.1,91.9,0,Doctorate,Yes,82.8,3.26,Safe
+STU-1567,Aryan Joshi,Mechanical Eng.,Female,15.8,84.0,9.5,77.3,85.4,0,Bachelor Degree,No,69.0,2.92,Safe
+STU-1568,Aryan Choudhury,Data Science,Female,11.1,73.9,4.0,49.2,45.5,2,High School,No,38.8,1.5,At-Risk
+STU-1569,Swati Deshmukh,Computer Science,Female,2.3,75.5,3.2,60.7,36.0,2,Associate Degree,Yes,36.8,1.49,At-Risk
+STU-1570,Dev Sharma,Electronics & Comm.,Female,8.6,53.4,4.0,64.4,58.8,0,Bachelor Degree,Yes,54.9,2.2,At-Risk
+STU-1571,Nandini Joshi,Computer Science,Female,26.6,92.1,6.7,93.7,87.8,0,Master Degree,No,85.4,3.33,Safe
+STU-1572,Sneha Choudhury,Computer Science,Female,11.3,90.6,20.7,88.4,73.4,0,Doctorate,No,65.5,2.65,Safe
+STU-1573,Rohan Verma,Data Science,Male,15.6,91.3,14.9,86.6,87.2,0,Doctorate,No,77.3,3.08,Safe
+STU-1574,Vikram Patel,Mechanical Eng.,Female,9.6,80.7,9.1,91.2,87.5,0,Master Degree,Yes,73.6,2.94,Safe
+STU-1575,Rohan Bhat,Mechanical Eng.,Female,11.0,76.1,14.2,71.9,77.0,0,Associate Degree,No,60.2,2.52,Safe
+STU-1576,Meera Joshi,Electronics & Comm.,Male,12.5,72.7,10.4,71.2,74.7,1,Bachelor Degree,No,63.8,2.48,Safe
+STU-1577,Arjun Bose,Electronics & Comm.,Female,13.9,73.0,11.5,72.4,55.6,0,Associate Degree,Yes,59.3,2.44,Safe
+STU-1578,Vivaan Bhat,Computer Science,Female,3.0,64.5,7.5,42.3,44.9,0,High School,No,46.2,1.8,At-Risk
+STU-1579,Vikram Bose,Electronics & Comm.,Male,13.3,75.7,10.1,78.7,69.6,0,Doctorate,Yes,69.8,2.75,Safe
+STU-1580,Pooja Kumar,Information Tech,Male,15.7,95.0,8.8,74.9,76.6,0,Bachelor Degree,No,73.0,3.0,Safe
+STU-1581,Nandini Reddy,Computer Science,Female,5.3,66.4,2.4,42.1,35.0,1,Associate Degree,Yes,29.3,1.19,At-Risk
+STU-1582,Siddharth Mehta,Computer Science,Female,5.9,59.2,4.8,52.5,63.8,1,High School,No,37.6,1.52,At-Risk
+STU-1583,Rohan Singh,Electronics & Comm.,Male,8.2,48.8,3.9,49.1,56.4,0,High School,Yes,45.9,1.92,At-Risk
+STU-1584,Riya Joshi,Electronics & Comm.,Female,29.5,92.7,17.6,86.2,83.6,0,Associate Degree,Yes,79.2,3.21,Safe
+STU-1585,Nandini Bose,Mechanical Eng.,Female,4.1,78.5,5.0,59.6,41.0,1,Bachelor Degree,No,35.9,1.44,At-Risk
+STU-1586,Ananya Iyer,Computer Science,Female,4.4,48.8,2.3,60.1,56.6,0,High School,No,37.9,1.4,At-Risk
+STU-1587,Vivaan Kumar,Information Tech,Male,7.6,72.4,3.5,38.2,52.9,0,High School,Yes,40.0,1.71,At-Risk
+STU-1588,Aryan Bhat,Electronics & Comm.,Female,16.6,86.9,16.8,95.4,85.4,0,Bachelor Degree,Yes,83.9,3.46,Safe
+STU-1589,Aditya Bose,Data Science,Female,24.4,88.4,19.5,93.9,80.0,0,Bachelor Degree,Yes,81.4,3.31,Safe
+STU-1590,Diya Bose,Computer Science,Female,8.2,52.4,4.2,65.2,25.9,1,Bachelor Degree,Yes,38.7,1.59,At-Risk
+STU-1591,Siddharth Malhotra,Information Tech,Female,6.0,75.1,6.5,35.2,56.5,0,Bachelor Degree,No,43.9,1.93,At-Risk
+STU-1592,Isha Chopra,Data Science,Female,18.2,76.6,5.5,70.9,74.9,0,Bachelor Degree,No,70.8,2.86,Safe
+STU-1593,Vikram Iyer,Computer Science,Female,25.3,86.4,15.2,95.4,87.6,0,Doctorate,No,83.4,3.31,Safe
+STU-1594,Neha Deshmukh,Mechanical Eng.,Male,19.9,95.2,14.4,87.0,93.8,0,Bachelor Degree,Yes,81.4,3.22,Safe
+STU-1595,Kabir Malhotra,Data Science,Male,13.0,89.7,14.1,73.4,61.9,0,Doctorate,Yes,54.3,2.21,At-Risk
+STU-1596,Meera Chatterjee,Computer Science,Male,15.0,93.6,7.1,81.8,94.2,0,Doctorate,No,76.3,3.04,Safe
+STU-1597,Neha Chatterjee,Information Tech,Male,31.4,95.9,16.3,87.0,100.0,0,Doctorate,No,90.1,3.55,Safe
+STU-1598,Rahul Nair,Data Science,Female,5.4,63.0,5.6,44.1,49.5,0,High School,No,43.5,1.88,At-Risk
+STU-1599,Aarav Nair,Computer Science,Male,16.8,75.9,8.2,70.4,54.8,0,Doctorate,No,56.3,2.36,Safe
+STU-1600,Meera Gupta,Computer Science,Female,29.2,89.1,15.4,98.6,93.1,0,Master Degree,No,85.7,3.41,Safe

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduMine | Integrated Educational Data Mining Framework</title>
+  <meta name="description" content="EduMine: An integrated data mining framework to analyze student academic and behavioral data, discover patterns via association rules and clustering, predict academic risk, and provide early intervention insights.">
+  
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <div class="brand-logo-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div class="brand-title-wrap">
+        <h1>EduMine</h1>
+        <div class="brand-subtitle">Integrated Educational Data Mining Framework</div>
+      </div>
+    </div>
+
+    <!-- Status Pills -->
+    <div class="header-status-pills">
+      <div class="pill-badge">
+        <span class="pill-dot" style="background-color: var(--accent-secondary);"></span>
+        <span id="pillStudentCount">600 Students</span>
+      </div>
+      <div class="pill-badge">
+        <span class="pill-dot pulse" style="background-color: var(--color-danger);"></span>
+        <span id="pillRiskRate">At-Risk: --%</span>
+      </div>
+      <div class="pill-badge">
+        <i class="fa-solid fa-database" style="color: var(--accent-primary); font-size: 0.75rem;"></i>
+        <span id="pillDatasetSource">sample_students.csv</span>
+      </div>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button class="btn btn-secondary" id="btnUploadModal" title="Upload custom student dataset">
+        <i class="fa-solid fa-cloud-arrow-up"></i> Upload Data
+      </button>
+      <button class="btn btn-secondary" id="btnResetData" title="Reset to standard sample dataset">
+        <i class="fa-solid fa-rotate-left"></i> Reset
+      </button>
+      <button class="btn btn-primary" id="btnRunPipeline" title="Execute full end-to-end data mining pipeline">
+        <i class="fa-solid fa-bolt"></i> Run Pipeline
+      </button>
+      <button class="btn-icon" id="btnThemeToggle" title="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Tab Bar -->
+  <nav class="nav-tab-bar" id="tabBar">
+    <button class="tab-btn active" data-tab="tabOverview">
+      <i class="fa-solid fa-table-columns tab-icon"></i> Overview & Data
+    </button>
+    <button class="tab-btn" data-tab="tabEDA">
+      <i class="fa-solid fa-chart-simple tab-icon"></i> Exploratory Analysis (EDA)
+    </button>
+    <button class="tab-btn" data-tab="tabAssociation">
+      <i class="fa-solid fa-diagram-project tab-icon"></i> Association Rules
+    </button>
+    <button class="tab-btn" data-tab="tabClustering">
+      <i class="fa-solid fa-circle-nodes tab-icon"></i> Student Clustering
+    </button>
+    <button class="tab-btn" data-tab="tabClassification">
+      <i class="fa-solid fa-shield-halved tab-icon"></i> Risk Classification
+    </button>
+    <button class="tab-btn" data-tab="tabRegression">
+      <i class="fa-solid fa-chart-line tab-icon"></i> Grade Regression
+    </button>
+    <button class="tab-btn" data-tab="tabAnomaly">
+      <i class="fa-solid fa-triangle-exclamation tab-icon"></i> Anomaly Detection
+    </button>
+    <button class="tab-btn" data-tab="tabIntervention">
+      <i class="fa-solid fa-wand-magic-sparkles tab-icon"></i> Early Intervention & Simulator
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- TAB 1: OVERVIEW & DATA -->
+    <section class="tab-pane active" id="tabOverview">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-chart-pie" style="color: var(--accent-primary);"></i> Student Academic & Behavioral Profile Overview</h2>
+          <p class="section-desc">Real-time summary of student enrollment, academic distributions, behavioral parameters, and raw dataset exploration.</p>
+        </div>
+      </div>
+
+      <!-- KPI Summary Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-top">
+            <span class="kpi-label">Total Cohort</span>
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-user-group"></i></div>
+          </div>
+          <div class="kpi-value" id="kpiTotalStudents">--</div>
+          <div class="kpi-subtext">Active student records analyzed</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-top">
+            <span class="kpi-label">At-Risk Rate</span>
+            <div class="kpi-icon-wrap" style="color: var(--color-danger);"><i class="fa-solid fa-heart-pulse"></i></div>
+          </div>
+          <div class="kpi-value" id="kpiRiskRate" style="color: var(--color-danger);">--%</div>
+          <div class="kpi-subtext"><span id="kpiRiskCount">--</span> students requiring early intervention</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-top">
+            <span class="kpi-label">Average Performance</span>
+            <div class="kpi-icon-wrap" style="color: var(--color-success);"><i class="fa-solid fa-award"></i></div>
+          </div>
+          <div class="kpi-value" id="kpiAvgScore">--</div>
+          <div class="kpi-subtext">Cohort mean examination score</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-top">
+            <span class="kpi-label">Cohort Attendance</span>
+            <div class="kpi-icon-wrap" style="color: var(--accent-secondary);"><i class="fa-solid fa-calendar-check"></i></div>
+          </div>
+          <div class="kpi-value" id="kpiAvgAttendance">--%</div>
+          <div class="kpi-subtext">Average lecture & lab attendance</div>
+        </div>
+      </div>
+
+      <!-- Raw Dataset Table Card -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title">
+            <i class="fa-solid fa-database" style="color: var(--accent-secondary);"></i>
+            <span>Interactive Student Dataset</span>
+            <span class="badge badge-info" id="badgeTotalRecords">600 Records</span>
+          </div>
+          <div class="filter-group">
+            <input type="text" id="tableSearchInput" class="form-input" placeholder="Search student name, ID, dept...">
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="modern-table" id="studentPreviewTable">
+            <thead>
+              <tr id="studentTableHeaders">
+                <th>Loading schema...</th>
+              </tr>
+            </thead>
+            <tbody id="studentTableBody">
+              <tr><td>Loading student records...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: EXPLORATORY DATA ANALYSIS -->
+    <section class="tab-pane" id="tabEDA">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-chart-simple" style="color: var(--accent-primary);"></i> Exploratory Data Analysis & Feature Distributions</h2>
+          <p class="section-desc">Statistical distributions, correlation matrices between academic and engagement variables, and comparisons across risk groups.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Correlation Heatmap / Matrix -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-bezier-curve" style="color: var(--accent-primary);"></i> Metric Correlation Matrix</div>
+          </div>
+          <div class="table-responsive" style="max-height: 330px;">
+            <table class="modern-table" id="corrTable">
+              <thead><tr id="corrHeaders"></tr></thead>
+              <tbody id="corrBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Attendance Distribution Chart -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-chart-column" style="color: var(--accent-secondary);"></i> Attendance Distribution Histogram</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartAttendanceDist"></canvas>
+          </div>
+        </div>
+
+        <!-- Study Hours vs Exam Score Scatter/Bar -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-clock" style="color: var(--color-warning);"></i> Study Hours & Behavioral Spread</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartStudyDist"></canvas>
+          </div>
+        </div>
+
+        <!-- Risk Comparison Grouping -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-scale-balanced" style="color: var(--color-danger);"></i> At-Risk vs Safe Metric Comparison</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartRiskComparison"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Descriptive Statistics Table -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title"><i class="fa-solid fa-square-root-variable" style="color: var(--accent-primary);"></i> Descriptive Statistical Breakdown</div>
+        </div>
+        <div class="table-responsive">
+          <table class="modern-table" id="descStatsTable">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Mean</th>
+                <th>Std Dev</th>
+                <th>Min</th>
+                <th>25%</th>
+                <th>Median (50%)</th>
+                <th>75%</th>
+                <th>Max</th>
+                <th>Skewness</th>
+              </tr>
+            </thead>
+            <tbody id="descStatsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: ASSOCIATION RULE MINING -->
+    <section class="tab-pane" id="tabAssociation">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-diagram-project" style="color: var(--accent-primary);"></i> Association Rule Mining (Apriori Pattern Discovery)</h2>
+          <p class="section-desc">Discovers hidden relationships connecting attendance levels, assignment submission habits, LMS engagement, and final exam performance.</p>
+        </div>
+      </div>
+
+      <!-- Controls Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-group slider-group">
+          <span class="filter-label">Min Support:</span>
+          <input type="range" id="sliderSupport" min="0.02" max="0.30" step="0.01" value="0.08">
+          <span class="slider-val" id="valSupport">0.08</span>
+        </div>
+
+        <div class="filter-group slider-group">
+          <span class="filter-label">Min Confidence:</span>
+          <input type="range" id="sliderConfidence" min="0.3" max="0.95" step="0.05" value="0.50">
+          <span class="slider-val" id="valConfidence">0.50</span>
+        </div>
+
+        <div class="filter-group slider-group">
+          <span class="filter-label">Min Lift:</span>
+          <input type="range" id="sliderLift" min="1.0" max="4.0" step="0.1" value="1.1">
+          <span class="slider-val" id="valLift">1.1</span>
+        </div>
+
+        <button class="btn btn-primary" id="btnMineRules">
+          <i class="fa-solid fa-filter"></i> Apply Mining Filters
+        </button>
+      </div>
+
+      <!-- Rule Network Canvas Visualizer -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title">
+            <i class="fa-solid fa-circle-nodes" style="color: var(--accent-secondary);"></i>
+            <span>Interactive Association Rule Dependency Network</span>
+          </div>
+          <span class="badge badge-info" id="badgeRuleCount">Found Rules</span>
+        </div>
+        <canvas id="networkCanvas"></canvas>
+      </div>
+
+      <!-- Discovered Rules Table -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title"><i class="fa-solid fa-list-check" style="color: var(--color-success);"></i> High-Confidence Actionable Rules</div>
+        </div>
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Rule ID</th>
+                <th>Antecedent (IF Student Exhibits...)</th>
+                <th></th>
+                <th>Consequent (THEN Outcome...)</th>
+                <th>Support</th>
+                <th>Confidence</th>
+                <th>Lift</th>
+                <th>Impact</th>
+              </tr>
+            </thead>
+            <tbody id="rulesTableBody">
+              <tr><td colspan="8">Mining association rules...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: STUDENT CLUSTERING -->
+    <section class="tab-pane" id="tabClustering">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-circle-nodes" style="color: var(--accent-primary);"></i> Student Clustering & Cohort Segmentation</h2>
+          <p class="section-desc">Unsupervised learning (K-Means, Hierarchical, DBSCAN) identifies student clusters with similar academic traits and engagement behaviors.</p>
+        </div>
+      </div>
+
+      <!-- Clustering Controls -->
+      <div class="filter-bar">
+        <div class="filter-group">
+          <span class="filter-label">Algorithm:</span>
+          <select id="clusterAlgoSelect" class="form-select">
+            <option value="kmeans">K-Means Clustering</option>
+            <option value="hierarchical">Hierarchical Agglomerative</option>
+            <option value="dbscan">DBSCAN (Density-Based)</option>
+          </select>
+        </div>
+
+        <div class="filter-group slider-group" id="clusterKGroup">
+          <span class="filter-label">Number of Clusters (k):</span>
+          <input type="range" id="sliderClusters" min="2" max="6" step="1" value="3">
+          <span class="slider-val" id="valClusters">3</span>
+        </div>
+
+        <button class="btn btn-primary" id="btnRunClustering">
+          <i class="fa-solid fa-arrows-rotate"></i> Re-Cluster Cohort
+        </button>
+
+        <div style="margin-left: auto;">
+          <span class="badge badge-info" id="badgeSilhouette">Silhouette Score: --</span>
+        </div>
+      </div>
+
+      <!-- Clustering Persona Cards -->
+      <div class="grid-3" id="clusterPersonasGrid" style="margin-bottom: 1.5rem;">
+        <!-- Filled dynamically -->
+      </div>
+
+      <div class="grid-2">
+        <!-- PCA 2D Scatter Projection -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-draw-polygon" style="color: var(--accent-primary);"></i> 2D PCA Cluster Projection</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartClusterPCA"></canvas>
+          </div>
+        </div>
+
+        <!-- Elbow Method & Silhouette Curve -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-chart-line" style="color: var(--color-warning);"></i> Optimal K (Elbow Method & Silhouette)</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartElbow"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: RISK CLASSIFICATION -->
+    <section class="tab-pane" id="tabClassification">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-shield-halved" style="color: var(--accent-primary);"></i> Academic Risk Classification & Model Evaluation</h2>
+          <p class="section-desc">Comparative evaluation of supervised classifiers predicting students at risk of course failure or academic probation.</p>
+        </div>
+      </div>
+
+      <!-- Model Leaderboard Table -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title"><i class="fa-solid fa-trophy" style="color: var(--color-warning);"></i> Classifier Performance Leaderboard</div>
+          <span class="badge badge-success" id="badgeBestClf">Top Model: --</span>
+        </div>
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Classifier Model</th>
+                <th>Accuracy (%)</th>
+                <th>Precision (%)</th>
+                <th>Recall (%)</th>
+                <th>F1-Score (%)</th>
+                <th>ROC-AUC</th>
+                <th>5-Fold CV Accuracy</th>
+              </tr>
+            </thead>
+            <tbody id="clfLeaderboardBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Feature Importance Bar Chart -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-ranking-star" style="color: var(--accent-secondary);"></i> Key Influential Features (Mutual Information)</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartFeatureImportance"></canvas>
+          </div>
+        </div>
+
+        <!-- ROC Curve & Confusion Matrix -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-bullseye" style="color: var(--color-danger);"></i> Confusion Matrix & ROC Curve</div>
+          </div>
+          
+          <div class="cm-container">
+            <div class="cm-cell true-cell">
+              <div class="cm-count" id="cmTN">--</div>
+              <div class="cm-label">True Negative (Safe)</div>
+            </div>
+            <div class="cm-cell false-cell">
+              <div class="cm-count" id="cmFP">--</div>
+              <div class="cm-label">False Positive (False Alarm)</div>
+            </div>
+            <div class="cm-cell false-cell">
+              <div class="cm-count" id="cmFN">--</div>
+              <div class="cm-label">False Negative (Missed Risk)</div>
+            </div>
+            <div class="cm-cell true-cell">
+              <div class="cm-count" id="cmTP">--</div>
+              <div class="cm-label">True Positive (Risk Caught)</div>
+            </div>
+          </div>
+
+          <div class="chart-container" style="height: 190px;">
+            <canvas id="chartROCCurve"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: GRADE REGRESSION -->
+    <section class="tab-pane" id="tabRegression">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-chart-line" style="color: var(--accent-primary);"></i> Expected Final Marks & GPA Regression</h2>
+          <p class="section-desc">Continuous estimation of expected student examination score or GPA with error distribution and comparative model scoring.</p>
+        </div>
+      </div>
+
+      <!-- Regressor Leaderboard Table -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title"><i class="fa-solid fa-award" style="color: var(--color-warning);"></i> Regression Model Evaluation Leaderboard</div>
+          <span class="badge badge-success" id="badgeBestReg">Top Regressor: --</span>
+        </div>
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Regression Model</th>
+                <th>R² Score</th>
+                <th>Variance Explained</th>
+                <th>RMSE (Root Mean Sq. Error)</th>
+                <th>MAE (Mean Absolute Error)</th>
+                <th>5-Fold CV R²</th>
+              </tr>
+            </thead>
+            <tbody id="regLeaderboardBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Actual vs Predicted Scatter Chart -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-crosshairs" style="color: var(--accent-secondary);"></i> Actual vs. Predicted Examination Scores</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartActualVsPred"></canvas>
+          </div>
+        </div>
+
+        <!-- Residual Error Histogram -->
+        <div class="card-box">
+          <div class="card-box-header">
+            <div class="card-box-title"><i class="fa-solid fa-bell-slash" style="color: var(--color-danger);"></i> Residual Error Distribution</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chartResiduals"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 7: ANOMALY DETECTION -->
+    <section class="tab-pane" id="tabAnomaly">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-triangle-exclamation" style="color: var(--accent-primary);"></i> Anomaly & Outlier Student Detection</h2>
+          <p class="section-desc">Isolation Forest algorithms detect anomalous student profiles exhibiting unusual academic divergence, severe drop-offs, or behavioral discrepancies.</p>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="filter-bar">
+        <div class="filter-group slider-group">
+          <span class="filter-label">Contamination Ratio:</span>
+          <input type="range" id="sliderContamination" min="0.02" max="0.15" step="0.01" value="0.05">
+          <span class="slider-val" id="valContamination">0.05</span>
+        </div>
+        <button class="btn btn-primary" id="btnScanAnomalies">
+          <i class="fa-solid fa-radar"></i> Run Anomaly Scan
+        </button>
+        <span class="badge badge-warning" id="badgeAnomalyCount" style="margin-left: auto;">Detected: --</span>
+      </div>
+
+      <!-- Anomalous Students Table -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title"><i class="fa-solid fa-user-ninja" style="color: var(--color-danger);"></i> Flagged Anomalous Student Profiles</div>
+        </div>
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Risk Status</th>
+                <th>Attendance</th>
+                <th>Study Hrs/Wk</th>
+                <th>Final Score</th>
+                <th>Anomaly Score</th>
+                <th>Algorithmic Diagnosis</th>
+              </tr>
+            </thead>
+            <tbody id="anomalyTableBody">
+              <tr><td colspan="8">Scanning for outliers...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 8: INTERVENTION & WHAT-IF SIMULATOR -->
+    <section class="tab-pane" id="tabIntervention">
+      <div class="section-header">
+        <div>
+          <h2><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--accent-primary);"></i> Early Academic Intervention & What-If Simulator</h2>
+          <p class="section-desc">Actionable early warning system with tailored intervention programs and an interactive what-if simulation sandbox.</p>
+        </div>
+      </div>
+
+      <!-- Simulator Sandbox -->
+      <div class="card-box" style="margin-bottom: 2rem;">
+        <div class="card-box-header">
+          <div class="card-box-title">
+            <i class="fa-solid fa-sliders" style="color: var(--accent-secondary);"></i>
+            <span>Interactive Student What-If Simulation Sandbox</span>
+          </div>
+          <span class="badge badge-info">Real-Time ML Inference</span>
+        </div>
+
+        <div class="simulator-panel">
+          <!-- Input Sliders -->
+          <div>
+            <div class="sim-input-row">
+              <div class="sim-input-top">
+                <span><i class="fa-solid fa-calendar-check" style="color: var(--accent-secondary);"></i> Attendance Percentage</span>
+                <span class="slider-val" id="simValAttendance">70%</span>
+              </div>
+              <input type="range" class="form-input" style="width: 100%;" id="simAttendance" min="40" max="100" value="70">
+            </div>
+
+            <div class="sim-input-row">
+              <div class="sim-input-top">
+                <span><i class="fa-solid fa-book-open" style="color: var(--color-warning);"></i> Study Hours Per Week</span>
+                <span class="slider-val" id="simValStudy">8 hrs</span>
+              </div>
+              <input type="range" class="form-input" style="width: 100%;" id="simStudy" min="2" max="35" value="8">
+            </div>
+
+            <div class="sim-input-row">
+              <div class="sim-input-top">
+                <span><i class="fa-solid fa-file-signature" style="color: var(--color-info);"></i> Assignment Completion Score</span>
+                <span class="slider-val" id="simValAssign">55%</span>
+              </div>
+              <input type="range" class="form-input" style="width: 100%;" id="simAssign" min="30" max="100" value="55">
+            </div>
+
+            <div class="sim-input-row">
+              <div class="sim-input-top">
+                <span><i class="fa-solid fa-laptop-code" style="color: var(--color-success);"></i> Weekly LMS Engagement</span>
+                <span class="slider-val" id="simValLMS">5 hrs</span>
+              </div>
+              <input type="range" class="form-input" style="width: 100%;" id="simLMS" min="1" max="30" value="5">
+            </div>
+
+            <div class="sim-input-row">
+              <div class="sim-input-top">
+                <span><i class="fa-solid fa-clipboard-question" style="color: var(--accent-primary);"></i> Midterm Examination Score</span>
+                <span class="slider-val" id="simValMidterm">50</span>
+              </div>
+              <input type="range" class="form-input" style="width: 100%;" id="simMidterm" min="20" max="100" value="50">
+            </div>
+
+            <div class="sim-input-row">
+              <div class="sim-input-top">
+                <span><i class="fa-solid fa-triangle-exclamation" style="color: var(--color-danger);"></i> Prior Arrears / Backlogs</span>
+                <span class="slider-val" id="simValFailures">1</span>
+              </div>
+              <input type="range" class="form-input" style="width: 100%;" id="simFailures" min="0" max="4" value="1">
+            </div>
+          </div>
+
+          <!-- Live Simulator Result Gauge -->
+          <div class="sim-result-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.25rem;">Predicted Academic Risk</h3>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Real-time ensemble risk probability</p>
+
+            <div class="gauge-circle" id="simGaugeCircle" style="background: radial-gradient(circle, rgba(239,68,68,0.2) 0%, rgba(239,68,68,0.05) 70%); border: 4px solid var(--color-danger);">
+              <span class="gauge-num" id="simRiskProbability">78%</span>
+              <span class="gauge-label" id="simRiskStatus">AT-RISK</span>
+            </div>
+
+            <div style="margin: 1.25rem 0; padding: 0.85rem; background: var(--bg-card); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem;">Expected Final Exam Score & Grade</div>
+              <div style="font-family: var(--font-heading); font-size: 1.55rem; font-weight: 700; color: var(--accent-secondary);" id="simPredictedScore">51.4 / 100</div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-main);" id="simGradeLetter">Grade: C (Satisfactory)</div>
+            </div>
+
+            <div class="persona-action" id="simActionRecommendation" style="text-align: left;">
+              <strong>Suggested Intervention:</strong> Immediate mandatory attendance counseling and assignment tutoring clinic.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actionable Early Intervention Table -->
+      <div class="card-box">
+        <div class="card-box-header">
+          <div class="card-box-title">
+            <i class="fa-solid fa-bell" style="color: var(--color-danger);"></i>
+            <span>Top Priority Students Requiring Early Intervention</span>
+          </div>
+          <span class="badge badge-danger">Immediate Action Required</span>
+        </div>
+        <div class="table-responsive">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Current Score</th>
+                <th>Attendance</th>
+                <th>Urgency</th>
+                <th>Personalized Academic Intervention Plan</th>
+              </tr>
+            </thead>
+            <tbody id="interventionTableBody">
+              <tr><td colspan="6">Loading interventions...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Upload Dataset Modal -->
+  <div class="modal-overlay" id="uploadModal">
+    <div class="modal-content">
+      <button class="modal-close" id="btnCloseModal"><i class="fa-solid fa-xmark"></i></button>
+      <h3 style="font-family: var(--font-heading); font-size: 1.35rem; margin-bottom: 0.4rem;">
+        <i class="fa-solid fa-cloud-arrow-up" style="color: var(--accent-primary);"></i> Upload Custom Dataset
+      </h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">
+        Upload your institutional student records in <strong>.csv</strong> or <strong>.xlsx</strong> format. EduMine will automatically detect columns, clean missing entries, and run all data mining algorithms.
+      </p>
+
+      <div class="dropzone" id="fileDropzone">
+        <i class="fa-solid fa-file-csv dropzone-icon"></i>
+        <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Drag & drop your dataset file here</div>
+        <div style="font-size: 0.78rem; color: var(--text-muted);">or click to browse from your device</div>
+        <input type="file" id="fileInput" accept=".csv, .xlsx, .xls" style="display: none;">
+      </div>
+
+      <div id="uploadStatusMsg" style="font-size: 0.85rem; text-align: center; margin-bottom: 1rem; display: none;"></div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button class="btn btn-secondary" id="btnCancelModal">Cancel</button>
+        <button class="btn btn-primary" id="btnConfirmUpload" disabled>
+          <i class="fa-solid fa-upload"></i> Upload & Process
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
